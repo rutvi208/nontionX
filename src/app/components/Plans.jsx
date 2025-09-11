@@ -9,6 +9,7 @@ import Knowtion from './../../assets/Plans/Knowtion.svg';
 import FirefliesAI from './../../assets/Plans/FirefliesAI.svg';
 import CimconSoftwares from './../../assets/Plans/Cimcon-software.svg';
 import KenGanley from './../../assets/Plans/Kenganley.svg';
+import Malish from './../../assets/Plans/Malish.svg';
 
 const Plans = () => {
     return (
@@ -152,6 +153,10 @@ const Plans = () => {
                                 <div className='justify-center flex'><Image
                                     src={KenGanley}
                                     alt='KenGanley logo'
+                                /></div>
+                                <div className='justify-center flex'><Image
+                                    src={Malish}
+                                    alt='Malish logo'
                                 /></div>
                             </div>
                             <div className='text-center container mx-auto place-content-center flex flex-col justify-center'>

@@ -2,6 +2,7 @@ import HeroSection from '@/app/components/HeroSection';
 import Whyus from "@/app/components/Whyus";
 import Howitworks from '@/app/components/Howitworks';
 import Plans from '@/app/components/Plans';
+import Process from '@/app/components/Process';
 
 export const metadata = {
   title: "notionX | GEO",
@@ -20,6 +21,8 @@ export default function Home() {
       <div><Howitworks/></div>
 
       <div><Plans/></div>
+
+      <div><Process/></div>
 
     </div>
   );
