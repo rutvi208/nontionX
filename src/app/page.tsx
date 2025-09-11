@@ -1,6 +1,7 @@
 import HeroSection from '@/app/components/HeroSection';
 import Whyus from "@/app/components/Whyus";
 import Howitworks from '@/app/components/Howitworks';
+import Plans from '@/app/components/Plans';
 
 export const metadata = {
   title: "notionX | GEO",
@@ -17,6 +18,8 @@ export default function Home() {
       <div><Whyus/></div>
 
       <div><Howitworks/></div>
+
+      <div><Plans/></div>
 
     </div>
   );

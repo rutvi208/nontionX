@@ -24,10 +24,10 @@ const Howitworks = () => {
                         key={i}
                         className="grid md:grid-cols-[6rem_1fr] gap-4 sm:gap-6 xl:gap-10 border-s-2 border-[#D4BAAE] ps-2 lg:ps-5"
                         >
-                        <h1 className="w-[6rem] text-left text-[var(--mudbrown)] heading-text font-semibold text-3xl lg:text-[2.50rem]">
+                        <h1 className="w-[6rem] text-left text-[var(--mudbrown)] heading-font font-semibold text-3xl lg:text-[2.50rem]">
                             {item.title}
                         </h1>
-                        <p className="content-text text-base sm:text-lg md:text-xl">
+                        <p className="content-font text-base sm:text-lg md:text-xl">
                             {item.text}
                         </p>
                         </div>
@@ -41,10 +41,10 @@ const Howitworks = () => {
                  <div className="grid md:grid-cols-2 gap-6 lg:gap-10 mt-3 lg:mt-5">
                     <div>
                         <div className="grid md:grid-cols-2 gap-6 lg:gap-10 mb-2 lg:mb-3">
-                            <h2 className="content-text font-semibold text-lg lg:text-xl">Traditional Search:</h2>
+                            <h2 className="content-font font-semibold text-lg lg:text-xl">Traditional Search:</h2>
                         </div>
                         <div className="bg-white rounded-lg p-3 xl:p-4">
-                            <p className="text-base text-[#1F2937] content-text">Best plumbers near me</p>
+                            <p className="text-base text-[#1F2937] content-font">Best plumbers near me</p>
                             <div className="bg-[#D1D5DB] rounded-full h-1.5 w-9/12 mt-4"></div>
                             <div className="bg-[#D1D5DB] rounded-full h-1.5 w-8/12 mt-2"></div>
                             <div className="bg-[#D1D5DB] rounded-full h-1.5 w-7/12 mt-2"></div>
@@ -52,10 +52,10 @@ const Howitworks = () => {
                     </div>
                     <div>
                         <div className="grid md:grid-cols-2 gap-6 lg:gap-10 mb-2 lg:mb-3">
-                            <h2 className="content-text font-semibold text-lg lg:text-xl">AI Search:</h2>
+                            <h2 className="content-font font-semibold text-lg lg:text-xl">AI Search:</h2>
                         </div>
                         <div className="bg-white rounded-lg p-3 xl:p-4">
-                            <p className="text-base text-[#1F2937] content-text">Who's the best plumber near me?</p>
+                            <p className="text-base text-[#1F2937] content-font">Who's the best plumber near me?</p>
                             <p className="text-sm text-[#222222] mt-2.5">"Based on high ratings and customer reviews, <span className="text-[#1A0DAB] ">Reliable Plumbing Services</span> is the best plumber in your area, known for their 24/7 emergency service and fair pricing..."</p>
                         </div>
                     </div>
@@ -64,8 +64,8 @@ const Howitworks = () => {
 
             {/* Audit link section  */}
             <div className="my-10 lg:my-24 xl:my-36 container mx-auto justify-center place-items-center text-center ">
-                <h1 className="heading-text text-2xl lg:text-3xl">Know your AI presence. Grow your advantage.</h1>
-                <p className="content-text text-base mt-2 lg:mt-3 lg:w-4/12">Enter a website URL to analyze its performance for traditional search engines and AI-driven platforms.</p>
+                <h1 className="heading-font text-2xl lg:text-3xl">Know your AI presence. Grow your advantage.</h1>
+                <p className="content-font text-base mt-2 lg:mt-3 lg:w-4/12">Enter a website URL to analyze its performance for traditional search engines and AI-driven platforms.</p>
                 <div className="mt-5 lg:mt-10">
                     <a href="#" className="text-[var(--cta)] lg:text-lg font-semibold hover:underline flex items-center gap-2">
                         Get your AI visibility check <span><HiMiniArrowSmallRight/> </span>
@@ -80,19 +80,19 @@ export default Howitworks;
 
             {/* <div className="flex flex-col gap-8 lg:gap-10">
                     <div className="grid md:[grid-template-columns:auto_1fr] gap-6 border-s-2 border-[#D4BAAE] ps-2 lg:ps-5">
-                        <h1 className="text-[var(--mudbrown)] heading-text font-semibold text-3xl lg:text-[2.50rem] ">63%</h1>
-                        <p className="content-text min-w-min text-base sm:text-lg md:text-xl">Of searches now happen inside AI tools like ChatGPT, Perplexity, and Google's Gemini.</p>
+                        <h1 className="text-[var(--mudbrown)] heading-font font-semibold text-3xl lg:text-[2.50rem] ">63%</h1>
+                        <p className="content-font min-w-min text-base sm:text-lg md:text-xl">Of searches now happen inside AI tools like ChatGPT, Perplexity, and Google's Gemini.</p>
                     </div>
                     <div className="grid md:[grid-template-columns:auto_1fr] gap-6 border-s-2 border-[#D4BAAE] ps-2 lg:ps-5">
-                        <h1 className="text-[var(--mudbrown)] heading-text font-semibold text-3xl lg:text-[2.50rem] ">2.4X</h1>
-                        <p className="content-text min-w-min text-base sm:text-lg md:text-xl">More trust in AI answers than in traditional search results.</p>
+                        <h1 className="text-[var(--mudbrown)] heading-font font-semibold text-3xl lg:text-[2.50rem] ">2.4X</h1>
+                        <p className="content-font min-w-min text-base sm:text-lg md:text-xl">More trust in AI answers than in traditional search results.</p>
                     </div>
                     <div className="grid md:[grid-template-columns:auto_1fr] gap-6 border-s-2 border-[#D4BAAE] ps-2 lg:ps-5">
-                        <h1 className="text-[var(--mudbrown)] heading-text font-semibold text-3xl lg:text-[2.50rem] ">ONE</h1>
-                        <p className="content-text min-w-min text-base sm:text-lg md:text-xl">Definitive answer is what AI delivers — not ten options to choose from.</p>
+                        <h1 className="text-[var(--mudbrown)] heading-font font-semibold text-3xl lg:text-[2.50rem] ">ONE</h1>
+                        <p className="content-font min-w-min text-base sm:text-lg md:text-xl">Definitive answer is what AI delivers — not ten options to choose from.</p>
                     </div>
                     <div className="grid md:[grid-template-columns:auto_1fr] gap-6 border-s-2 border-[#D4BAAE] ps-2 lg:ps-5">
-                        <h1 className="text-[var(--mudbrown)] heading-text font-semibold text-3xl lg:text-[2.50rem] ">AI</h1>
-                        <p className="content-text min-w-min text-base sm:text-lg md:text-xl">Response is the modern marketplace — if your business isn’t present, you’re left unseen.</p>
+                        <h1 className="text-[var(--mudbrown)] heading-font font-semibold text-3xl lg:text-[2.50rem] ">AI</h1>
+                        <p className="content-font min-w-min text-base sm:text-lg md:text-xl">Response is the modern marketplace — if your business isn’t present, you’re left unseen.</p>
                     </div>
                 </div> */}

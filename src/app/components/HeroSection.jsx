@@ -56,7 +56,7 @@ const HeroSection = () => {
                                     <div className="absolute inset-2 sm:inset-3.5 lg:inset-3 xl:inset-8 z-[5] drop-shadow-lg">
                                         <div className="space-y-1 xl:space-y-2 p-7">
                                             <div className="bg-gradient-to-b from-white to-white/70 backdrop-blur-md rounded-t-xl lg:rounded-t-2xl p-3 sm:p-5 lg:p-4 xl:p-7">
-                                                <h2 className="text-center content-text text-[#5D3E35] sm:text-lg lg:text-base xl:text-[1.375rem]">We make your business the #1 recommendation when customers ask AI for
+                                                <h2 className="text-center content-font text-[#5D3E35] sm:text-lg lg:text-base xl:text-[1.375rem]">We make your business the #1 recommendation when customers ask AI for
                                                    <span className="font-semibold"> Local services, Products, or Solutions in your Industry.</span>
                                                 </h2>
                                             </div>
