@@ -8,7 +8,7 @@ import { FiShield } from "react-icons/fi";
 import Knowtion from './../../assets/Plans/Knowtion.svg';
 import FirefliesAI from './../../assets/Plans/FirefliesAI.svg';
 import CimconSoftwares from './../../assets/Plans/Cimcon-software.svg';
-import KenGanley from './../../assets/Plans/kenganley.svg';
+import KenGanley from './../../assets/Plans/Kenganley.svg';
 
 const Plans = () => {
     return (
