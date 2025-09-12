@@ -24,14 +24,14 @@ const Navbar = () => {
                     <div className="container mx-auto w-full p-6">
                         <header className="flex justify-between items-center">
                         <div>
-                            <Link href={"/"}><Image fetchPriority='high' src={Navlogo} alt="ResoNex Logo" width={180} height={60}
-                            loading="lazy" /></Link>
+                            <Link href={"/"}><Image fetchPriority='high' src={Navlogo} alt="notionx Logo" width={180} height={60}
+                            loading="lazy" className='w-40 h-16' /></Link>
                         </div>
                         <nav className="hidden md:flex gap-8 text-sm text-[var(--foreground)] font-medium items-center">
                             <a href="#howitworks" className="text-base lg:text-xl">How it works</a>
                             <a href="#pricing" className="text-base lg:text-xl">Pricing</a>
-                            <button className='py-2.5 px-6 bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] transition duration-300'>
-                                Book Strategy Call <span className='text-white ps-2 text-2xl'><HiMiniArrowSmallRight /></span>
+                            <button className='group py-2.5 px-6 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl'><HiMiniArrowSmallRight /></span>
                             </button>
                         </nav>
                         <div onClick={handleNav} className='md:hidden z-20'>
@@ -50,7 +50,7 @@ const Navbar = () => {
                             <ul className='h-max w-full text-center py-8'>
                                 <li className='px-4 text-2xl py-4'><Link href="#howitworks">How it works</Link></li>
                                 <li className='px-4 text-2xl py-4'><Link href='#pricing'>Pricing</Link></li>
-                                <button className='py-2.5 px-6 bg-[var(--cta)] text-[var(--pastelbrown)] rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] transition duration-300'>
+                                <button className='mt-4 py-2.5 px-6 bg-[var(--cta)] text-[var(--pastelbrown)] rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] transition duration-300'>
                                     Book Strategy Call
                                 </button>
                             </ul>

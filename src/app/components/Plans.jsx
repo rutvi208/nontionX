@@ -27,6 +27,7 @@ const Plans = () => {
                         <p className="text-lg lg:text-xl text-center text-white content-font mt-3">Choose the plan that fits your business goals and budget</p>
 
                         <div className='flex flex-col md:flex-row space-y-4 sm:space-y-0 md:space-x-8 lg:space-x-10 mt-24'>
+                            {/* professional */}
                             <div className='bg-[#151515] rounded-xl p-10 flex flex-col'>
 
                                 {/* professional */}
@@ -68,7 +69,7 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 justify-center w-full place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer justify-center w-full place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 
@@ -112,7 +113,7 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 w-full justify-center place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer w-full justify-center place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 

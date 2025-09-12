@@ -3,6 +3,11 @@ import Whyus from "@/app/components/Whyus";
 import Howitworks from '@/app/components/Howitworks';
 import Plans from '@/app/components/Plans';
 import Process from '@/app/components/Process';
+import GeoSeo from '@/app/components/GeoSeo';
+
+import Cta from '@/app/components/CTA';
+import Faq from '@/app/components/FAQ';
+import Footer from '@/app/components/Footer';
 
 export const metadata = {
   title: "notionX | GEO",
@@ -18,11 +23,19 @@ export default function Home() {
 
       <div><Whyus/></div>
 
-      <div><Howitworks/></div>
+      <div id='howitworks'><Howitworks/></div>
 
-      <div><Plans/></div>
+      <div id='pricing'><Plans/></div>
 
       <div><Process/></div>
+
+      <div><GeoSeo/></div>
+
+      <div><Cta/></div>
+
+      <div><Faq/></div>
+
+      <div><Footer/></div>
 
     </div>
   );

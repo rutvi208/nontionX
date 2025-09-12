@@ -28,7 +28,7 @@ const Whyus = () => {
                                 loading="lazy"
                                 className="sm:mb-6 w-24 h-24 md:w-fit md:h-fit"
                                 />
-                            <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Be THE Answer</h3>
+                            <h3 className="heading-font text-left sm:font-semibold text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Be THE Answer</h3>
                             <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                 Don't compete for clicks. Be the definitive AI recommendation when customers ask.                            
                             </p>
@@ -40,7 +40,7 @@ const Whyus = () => {
                                 loading="lazy"
                                 className="sm:mb-6 w-24 h-24 md:w-fit md:h-fit"
                                 />
-                            <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Faster Results</h3>
+                            <h3 className="heading-font text-left sm:font-semibold text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Faster Results</h3>
                             <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                 Achieve AI visibility in 4-6 weeks vs. 6-12 months for traditional SEO.                        
                             </p>
@@ -52,7 +52,7 @@ const Whyus = () => {
                                 loading="lazy"
                                 className="sm:mb-6 w-24 h-24 md:w-fit md:h-fit"
                                 />
-                            <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Future Proof Strategy</h3>
+                            <h3 className="heading-font text-left sm:font-semibold text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Future Proof Strategy</h3>
                             <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                 Align with how customers actually search today: asking AI tools direct questions.                            
                             </p>
@@ -64,7 +64,7 @@ const Whyus = () => {
                                 loading="lazy"
                                 className="sm:mb-6 w-24 h-24 md:w-fit md:h-fit"
                                 />
-                            <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Measurable ROI</h3>
+                            <h3 className="heading-font text-left sm:font-semibold text-lg lg:text-2xl tracking-[-0.06rem] mb-2 lg:mb-3">Measurable ROI</h3>
                             <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                 Track AI mentions, branded searches, and qualified leads from AI-powered discovery.                           
                             </p>

@@ -3,11 +3,11 @@ import { HiMiniArrowSmallRight } from "react-icons/hi2";
 
 const Howitworks = () => {
     return (
-        <div className="my-20 xl:my-28 container mx-auto px-6">
-            <div className="space-y-16 md:space-y-0 flex flex-col lg:flex-row xl:items-center">
+        <div className="my-20 xl:my-28 container mx-auto px-6 flex flex-col items-center">
+            <div className="space-y-16 sm:space-y-12 lg:space-y-0 xl:max-w-6xl 2xl:max-w-7xl flex flex-col lg:flex-row xl:items-center">
                 {/* Left Text Section */}
                 <div>
-                    <h1 className="text-5xl lg:text-6xl xl:text-[4rem] sm:leading-14 lg:leading-16 xl:leading-20 font-medium tracking-[-0.16rem] text-[var(--foreground)] heading-font sm:w-5/12 lg:w-8/12 xl:w-6/12 2xl:w-5/12">
+                    <h1 className="text-5xl lg:text-6xl xl:text-[4rem] sm:leading-14 lg:leading-16 xl:leading-20 font-medium tracking-[-0.16rem] text-[var(--foreground)] heading-font sm:w-8/12 xl:w-6/12 2xl:w-6/12">
                         Google's 10 <span className="font-light">Blue Links</span> Don't Matter Anymore
                     </h1>
                 </div>
