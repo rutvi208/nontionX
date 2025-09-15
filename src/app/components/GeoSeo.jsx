@@ -12,7 +12,7 @@ import geo4 from "./../../assets/GEO-SEO/GEO-visual4.webp";
 const GeoSeo = () => {
     return (
         <div className="bg-[var(--pastelbrown)] ">
-            <div className="px-12 py-16 sm:py-20 lg:py-28 2xl:px-20">
+            <div className="mx-auto container py-16 sm:py-20 lg:py-28 px-5 lg:px-8 2xl:px-0"> {/* px-12 2xl:px-20 */}
                 <div>
                     <h1 className="heading-font font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">GEO vs SEO: What Changed</h1>
                     <p className="text-lg lg:text-xl content-font mt-3">The AI search revolution requires a completely different approach to getting found online</p>
@@ -24,7 +24,7 @@ const GeoSeo = () => {
                 <div className="space-y-12 lg:space-y-14 mt-12 sm:mt-20 lg:mt-[6.25rem]">
                     <div className="bg-white rounded-xl lg:rounded-[1.25rem] p-4 sm:p-7 lg:p-10 ">
                         <h1 className="content-font font-semibold text-[#5D3E35] mb-6 sm:mb-8 lg:mb-10 text-2xl sm:text-4xl lg:text-[2.5rem] tracking-[-0.05rem]">Traditional SEO</h1>
-                        <div className="grid gap-4 sm:gap-2 2xl:gap-3 md:grid-cols-4">
+                        <div className="grid gap-4 sm:gap-2 2xl:gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
                             <div>
                                 <Image
                                     src={tsv1}
@@ -66,7 +66,7 @@ const GeoSeo = () => {
 
                     <div className="bg-white rounded-xl lg:rounded-[1.25rem] p-4 sm:p-7 lg:p-10 ">
                         <h1 className="content-font font-semibold text-[#5D3E35] mb-6 sm:mb-8 lg:mb-10 text-2xl sm:text-4xl lg:text-[2.5rem] tracking-[-0.05rem]">Generative Engine Optimization</h1>
-                        <div className="grid gap-4 sm:gap-2 2xl:gap-3 md:grid-cols-4">
+                        <div className="grid gap-4 sm:gap-2 2xl:gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
                             <div>
                                 <Image
                                     src={geo1}

@@ -88,23 +88,23 @@ const Process = () => {
             </div>
 
             {/* content */}
-            <div className="relative z-10 px-12 py-12 sm:py-20 lg:py-28 2xl:px-20">
+            <div className="relative z-10 mx-auto container py-12 sm:py-20 lg:py-28 px-5 lg:px-8 2xl:px-0">
                 <div>
                     <h1 className="heading-font font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">Our GEO Process</h1>
                     <p className="text-lg lg:text-xl content-font mt-3">How we get your business featured in AI responses</p>
                 </div>
 
                 <div className="mt-12 lg:mt-20">
-                    <div className="grid gap-4 sm:gap-2 2xl:gap-3 md:grid-cols-2 xl:grid-cols-4">
-                        <div className='relative overflow-hidden'>
+                    <div className="grid gap-4 sm:gap-3 md:grid-cols-2 xl:grid-cols-4">
+                        <div className='relative overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-2xl'>
                             <Image
                                 src={ProcessBg1}
-                                alt="Plans Background"
+                                alt="Process1 Background"
                                 loading="lazy"
-                                className='absolute inset-0 object-cover h-full w-full ' 
+                                className='absolute inset-0 object-cover h-full w-full' 
                                 // z index not added
                             />
-                            <div className="relative inset-0 z-10 p-3 lg:p-5 border-[0.0625rem] border-[var(--stroke)] rounded-2xl h-full flex flex-col justify-between">
+                            <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
                                     <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Visibility Audit</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
@@ -131,15 +131,15 @@ const Process = () => {
                             </div>
                         </div>
 
-                        <div className='relative overflow-hidden'>
+                        <div className='relative overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-2xl'>
                             <Image
                                 src={ProcessBg2}
-                                alt="Plans Background"
+                                alt="Process2 Background"
                                 loading="lazy"
                                 className='absolute inset-0 object-cover h-full w-full ' 
                                 // z index not added
                             />
-                            <div className="relative inset-0 z-10 p-3 lg:p-5 border-[0.0625rem] border-[var(--stroke)] rounded-2xl h-full flex flex-col justify-between">
+                            <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
                                     <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Schema Development</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
@@ -166,15 +166,15 @@ const Process = () => {
                             </div>
                         </div>
 
-                        <div className='relative overflow-hidden'>
+                        <div className='relative overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-2xl'>
                             <Image
                                 src={ProcessBg3}
-                                alt="Plans Background"
+                                alt="Process3 Background"
                                 loading="lazy"
                                 className='absolute inset-0 object-cover h-full w-full ' 
                                 // z index not added
                             />
-                            <div className="relative inset-0 z-10 p-3 lg:p-5 border-[0.0625rem] border-[var(--stroke)] rounded-2xl h-full flex flex-col justify-between">
+                            <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
                                     <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">Citation Building</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
@@ -201,15 +201,15 @@ const Process = () => {
                             </div>
                         </div>
 
-                        <div className='relative overflow-hidden'>
+                        <div className='relative overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-2xl'>
                             <Image
                                 src={ProcessBg4}
-                                alt="Plans Background"
+                                alt="Process4 Background"
                                 loading="lazy"
                                 className='absolute inset-0 object-cover h-full w-full ' 
                                 // z index not added
                             />
-                            <div className="relative inset-0 z-10 p-3 lg:p-5 border-[0.0625rem] border-[var(--stroke)] rounded-2xl h-full flex flex-col justify-between">
+                            <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
                                     <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Monitoring & Optimization</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">

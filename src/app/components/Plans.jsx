@@ -35,7 +35,7 @@ const Plans = () => {
                                    <Image 
                                       src={Star}
                                       alt='Star'
-                                      className='w-fit h-fit invert'
+                                      className='w-4 h-4 sm:w-fit sm:h-fit invert'
                                    />
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
                                 </div>
@@ -83,7 +83,7 @@ const Plans = () => {
                                    <Image 
                                       src={Star}
                                       alt='Star'
-                                      className='w-fit h-fit'
+                                      className='w-4 h-4 sm:w-fit sm:h-fit'
                                    />
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>professional</h1>
                                 </div>
@@ -121,44 +121,58 @@ const Plans = () => {
                         </div>
 
                         {/* USP */}
-                        <div className='mt-6 lg:mt-10 flex flex-col sm:flex-row space-x-4 lg:space-x-8'>
-                            <div className='text-[#FAEEE6] flex items-center space-x-3 pe-8 border-e-[0.0625rem] border-[#D4BAAE]'>
+                        <div className='mt-8 lg:mt-10 flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-4 lg:space-x-8 justify-center mx-auto'>
+                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:pe-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
                                 <FiCheckCircle/>
-                                <p className='content-font text-base lg:text-xl '>Results in 6 weeks</p>
+                                <p className='content-font text-base lg:text-xl'>Results in 6 weeks</p>
                             </div>
-                            <div className='text-[#FAEEE6] flex items-center space-x-3 pe-8 border-e-[0.0625rem] border-[#D4BAAE]'>
+                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:pe-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
                                 <AiOutlineUsergroupAdd/>
-                                <p className='content-font text-base lg:text-xl '>200+ businesses served</p>
+                                <p className='content-font text-base lg:text-xl'>200+ businesses served</p>
                             </div>
-                            <div className='text-[#FAEEE6] flex items-center space-x-3'>
+                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3'>
                                 <FiShield/>
-                                <p className='content-font text-base lg:text-xl '>No long-term contracts</p>
+                                <p className='content-font text-base lg:text-xl'>No long-term contracts</p>
                             </div>
                         </div>
 
                         {/* Testimonial section */}
                         <div className='bg-[#191919] rounded-xl mt-16 lg:mt-28 p-6 sm:p-8 lg:p-10 xl:px-16 max-w-5xl'>
-                            <div className='mb-12 sm:mb-16 container mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-center items-center'>
-                                <div className='justify-center flex'><Image
-                                    src={Knowtion}
-                                    alt='Knowtion logo'
-                                /></div>
-                                <div className='justify-center flex'><Image
-                                    src={FirefliesAI}
-                                    alt='FirefliesAI logo'
-                                /></div>
-                                <div className='justify-center flex'><Image
-                                    src={CimconSoftwares}
-                                    alt='CimconSoftwares logo'
-                                /></div>
-                                <div className='justify-center flex'><Image
-                                    src={KenGanley}
-                                    alt='KenGanley logo'
-                                /></div>
-                                <div className='justify-center flex'><Image
-                                    src={Malish}
-                                    alt='Malish logo'
-                                /></div>
+                            {/* grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8
+                            flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-12
+                            grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12  ( col-span-2 sm:col-span-1)
+                            */}
+                            <div className='mb-12 sm:mb-16 container mx-auto flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-12 justify-center items-center'>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={Knowtion}
+                                        alt='Knowtion logo'
+                                    />
+                                </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={FirefliesAI}
+                                        alt='FirefliesAI logo'
+                                    />
+                                </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={CimconSoftwares}
+                                        alt='CimconSoftwares logo'
+                                    />
+                                </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={KenGanley}
+                                        alt='KenGanley logo'
+                                    />
+                                </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={Malish}
+                                        alt='Malish logo'
+                                    />
+                                </div>
                             </div>
                             <div className='text-center container mx-auto place-content-center flex flex-col justify-center'>
                                 <p className='text-white font-light content-font text-xl sm:text-2xl lg:text-3xl sm:w-10/12 lg:w-9/12 mx-auto'>"SmartAI SEO transformed our visibility. We're now the top recommendationm for HVAC services in our region across all major AI platforms."</p>

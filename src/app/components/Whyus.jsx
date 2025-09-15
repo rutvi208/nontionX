@@ -9,7 +9,7 @@ const Whyus = () => {
     return (
         <div className="mb-20 px-3">
             <section className="py-12 sm:py-20 bg-[var(--pastelbrown)] container mx-auto rounded-3xl border border-[var(--stroke)]">
-                <div className="flex flex-col px-10 xl:px-20">
+                <div className="flex flex-col px-6 sm:px-10 xl:px-20">
                     <div className="relative sm:w-6/12 p-[1px] rounded-full bg-[conic-gradient(at_center,_#FFB900,_#F4364C,_#FFB900)] mb-6">
                         <div className="flex flex-row gap-2.5 items-center bg-white rounded-full py-[0.44rem] px-3 text-[var(--foreground)] text-base font-normal content-font">
                             <div className="p-2 rounded-full text-white bg-[conic-gradient(at_center,_#FFB900,_#F4364C,_#FFB900)]"><BiSearch /></div>
@@ -20,7 +20,7 @@ const Whyus = () => {
                     <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-tight text-[var(--foreground)] heading-font xl:w-6/12">
                         Here's why our clients win in AI answers.
                     </h1>
-                    <div className="mt-[3.75rem] grid gap-8 sm:gap-10 xl:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <div className="mt-10 sm:mt-[3.75rem] grid gap-7 sm:gap-10 xl:gap-6 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                         <div className="text-[var(--foreground)] rounded-2xl">
                             <Image
                                 src={BeTheAnswer}

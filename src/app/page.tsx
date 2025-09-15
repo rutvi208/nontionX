@@ -4,7 +4,7 @@ import Howitworks from '@/app/components/Howitworks';
 import Plans from '@/app/components/Plans';
 import Process from '@/app/components/Process';
 import GeoSeo from '@/app/components/GeoSeo';
-
+import CaseStudy from '@/app/components/CaseStudy';
 import Cta from '@/app/components/CTA';
 import Faq from '@/app/components/FAQ';
 import Footer from '@/app/components/Footer';
@@ -30,6 +30,8 @@ export default function Home() {
       <div><Process/></div>
 
       <div><GeoSeo/></div>
+
+      <div><CaseStudy/></div>
 
       <div><Cta/></div>
 

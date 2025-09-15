@@ -14,7 +14,7 @@ const Footer = () => {
                         <a href="#howitworks" className="text-xl hover:text-[var(--cta)]">How it works</a>
                         <a href="#pricing" className="text-xl hover:text-[var(--cta)]">Pricing</a>
                         <button className='cursor-pointer group text-white flex items-center text-xl font-bold hover:text-[var(--cta)] transition duration-300'>
-                            Claim Your AI Visibility Audit <span className='text-white ps-2 text-2xl group-hover:text-[var(--cta)]'><HiMiniArrowSmallRight /></span>
+                            Claim Your AI Visibility Audit <span className='text-white ps-2 text-2xl group-hover:text-[var(--cta)] transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                         </button>
                     </div>
                     <div className="justify-end-safe">
