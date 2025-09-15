@@ -31,16 +31,16 @@ const Plans = () => {
                             <div className='bg-[#151515] rounded-xl p-10 flex flex-col'>
 
                                 {/* professional */}
-                                <div className='bg-[var(--pastelbrown)] border-[0.0625rem] border-[var(--stroke)] rounded-full px-7 py-3.5 flex flex-row space-x-3 items-center justify-center'>
+                                <div className='flex flex-row space-x-3 items-center text-white'>
                                    <Image 
                                       src={Star}
                                       alt='Star'
-                                      className='w-fit h-fit'
+                                      className='w-fit h-fit invert'
                                    />
-                                   <h1 className='text-xl lg:text-2xl uppercase'>professional</h1>
+                                   <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
                                 </div>
 
-                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] tracking-[-0.08rem] mt-6 lg:mt-10'>$1,997</h1>
+                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$3,997</h1>
                                 <p className='text-white text-lg lg:text-xl content-font'>per month</p>
 
                                 <div>
@@ -50,10 +50,11 @@ const Plans = () => {
                                     </div> */}
                                     <div className="space-y-3 my-10 lg:my-[3.75rem]">
                                         {[
-                                            "Competitive position defense",
-                                            "Advanced schema development",
-                                            "Weekly AI monitoring",
-                                            "6 AI platforms optimization",
+                                            "Everything in Professional",
+                                            "Custom AI training datasets",
+                                            "Daily AI monitoring",
+                                            "All AI platforms optimization",
+                                            "Dedicated account manager",
                                         ].map((feature, index) => (
                                             <div
                                             key={index}
@@ -69,7 +70,7 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 cursor-pointer justify-center w-full place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer justify-center w-full place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 
@@ -78,26 +79,25 @@ const Plans = () => {
                             {/* enterprise */}
                             <div className='bg-[conic-gradient(at_left,_#EFE3DD,_#FDF8F5)] rounded-xl p-10 flex flex-col '>
 
-                                <div className='bg-[var(--pastelbrown)] border-[0.0625rem] border-[var(--stroke)] rounded-full px-8 py-4 flex flex-row space-x-3 items-center justify-center'>
+                                <div className='flex flex-row space-x-3 items-center'>
                                    <Image 
                                       src={Star}
                                       alt='Star'
                                       className='w-fit h-fit'
                                    />
-                                   <h1 className='text-xl lg:text-2xl uppercase'>enterprise</h1>
+                                   <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>professional</h1>
                                 </div>
 
-                                <h1 className='font-medium text-4xl lg:text-[4rem] tracking-[-0.08rem] mt-6 lg:mt-10'>$3,997</h1>
+                                <h1 className='font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$1,997</h1>
                                 <p className='text-lg lg:text-xl content-font'>per month</p>
 
                                 <div>
                                     <div className="space-y-3 my-10 lg:my-[3.75rem]">
                                         {[
-                                            "Everything in Professional",
-                                            "Custom AI training datasets",
-                                            "Daily AI monitoring",
-                                            "All AI platforms optimization",
-                                            "Dedicated account manager",
+                                            "Competitive position defense",
+                                            "Advanced schema development",
+                                            "Weekly AI monitoring",
+                                            "6 AI platforms optimization",
                                         ].map((feature, index) => (
                                             <div
                                             key={index}
@@ -113,7 +113,7 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 cursor-pointer w-full justify-center place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer w-full justify-center place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 
@@ -138,7 +138,7 @@ const Plans = () => {
 
                         {/* Testimonial section */}
                         <div className='bg-[#191919] rounded-xl mt-16 lg:mt-28 p-6 sm:p-8 lg:p-10 xl:px-16 max-w-5xl'>
-                            <div className='mb-12 lg:mb-16 container mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-center items-center'>
+                            <div className='mb-12 sm:mb-16 container mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-center items-center'>
                                 <div className='justify-center flex'><Image
                                     src={Knowtion}
                                     alt='Knowtion logo'
@@ -161,7 +161,7 @@ const Plans = () => {
                                 /></div>
                             </div>
                             <div className='text-center container mx-auto place-content-center flex flex-col justify-center'>
-                                <p className='text-white content-font text-xl lg:text-2xl '>"SmartAI SEO transformed our visibility. We're now the top recommendationm for HVAC services in our region across all major AI platforms."</p>
+                                <p className='text-white font-light content-font text-xl sm:text-2xl lg:text-3xl sm:w-10/12 lg:w-9/12 mx-auto'>"SmartAI SEO transformed our visibility. We're now the top recommendationm for HVAC services in our region across all major AI platforms."</p>
                                 <p className='text-white content-font text-sm lg:text-base mt-4 lg:mt-6'>Mike R., Regional HVAC Company</p>
                             </div>
 

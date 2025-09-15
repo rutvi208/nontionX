@@ -63,11 +63,11 @@ const Howitworks = () => {
             </div>
 
             {/* Audit link section  */}
-            <div className="my-10 lg:my-24 xl:my-36 container mx-auto justify-center place-items-center text-center ">
-                <h1 className="heading-font text-2xl lg:text-3xl">Know your AI presence. Grow your advantage.</h1>
+            <div className="mt-10 lg:mt-24 xl:mt-36 container mx-auto justify-center place-items-center text-center ">
+                <h1 className="heading-font text-3xl lg:text-5xl">Know your AI presence. Grow your advantage.</h1>
                 <p className="content-font text-base mt-2 lg:mt-3 lg:w-4/12">Enter a website URL to analyze its performance for traditional search engines and AI-driven platforms.</p>
-                <div className="mt-5 lg:mt-10">
-                    <a href="#" className="text-[var(--cta)] lg:text-lg font-semibold hover:underline flex items-center gap-2">
+                <div className="mt-5 lg:mt-10 text-center mx-auto">
+                    <a href="#" className="text-[var(--cta)] lg:text-lg font-semibold hover:underline flex items-center text-center mx-auto gap-2">
                         Get your AI visibility check <span><HiMiniArrowSmallRight/> </span>
                     </a>
                 </div>

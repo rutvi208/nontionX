@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import Hero from "./../../assets/HeroSection/Hero-visual-bg.png";
+import Hero from "./../../assets/HeroSection/HeroVisual.svg";
 import HeroBg from './../../assets/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
-import ChatGPT from './../../assets/HeroSection/ChatGPT.svg';
-import Perplexity from './../../assets/HeroSection/Perplexity.svg';
-import Gemini from './../../assets/HeroSection/Gemini.png';
+// import ChatGPT from './../../assets/HeroSection/ChatGPT.svg';
+// import Perplexity from './../../assets/HeroSection/Perplexity.svg';
+// import Gemini from './../../assets/HeroSection/Gemini.png';
 
 const HeroSection = () => {
     return (
@@ -47,7 +47,14 @@ const HeroSection = () => {
 
                             {/* Right Image Section */}
                             <div>
-                                <div className="relative w-full h-full overflow-hidden">
+                                <div>
+                                    <Image
+                                         src={Hero}
+                                        alt="Hero Image"
+                                        className="rounded-lg object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
+                                    />
+                                </div>
+                                {/* <div className="relative w-full h-full overflow-hidden">
                                     <Image
                                     src={Hero}
                                     alt="Hero Image"
@@ -84,7 +91,7 @@ const HeroSection = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </section>
