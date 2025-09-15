@@ -41,7 +41,7 @@ const GeoSeo = () => {
                                 />
                                 <p className="content-font text-lg lg:text-xl text-[#5D3E35] ms-3.5 mt-4">Competes with 9 other results on page one.</p>
                             </div>
-                            <div>
+                            <div className="mt-6 sm:mt-0">
                                 <Image
                                     src={tsv3}
                                     alt="Traditional SEO Visual 3"
@@ -49,7 +49,7 @@ const GeoSeo = () => {
                                 />
                                 <p className="content-font text-lg lg:text-xl text-[#5D3E35] ms-3.5 mt-4">Focuses on driving traffic to your website.</p>
                             </div>
-                            <div>
+                            <div className="mt-6 sm:mt-0">
                                 <Image
                                     src={tsv4}
                                     alt="Traditional SEO Visual 4"
@@ -61,7 +61,7 @@ const GeoSeo = () => {
                     </div>
 
                     <div>
-                        <p className="content-font font-semibold italic text-xl lg:text-2xl text-center">How GEO delivers results traditional SEO can't.</p>
+                        <p className="content-font font-semibold italic text-2xl sm:text-4xl lg:text-5xl text-center">How GEO delivers results traditional SEO can't.</p>
                     </div>
 
                     <div className="bg-white rounded-xl lg:rounded-[1.25rem] p-4 sm:p-7 lg:p-10 ">
@@ -83,7 +83,7 @@ const GeoSeo = () => {
                                 />
                                 <p className="content-font text-lg lg:text-xl text-[#5D3E35] ms-1 mt-4">Positions you as THE definitive answer, not an option.</p>
                             </div>
-                            <div>
+                            <div className="mt-6 sm:mt-0">
                                 <Image
                                     src={geo3}
                                     alt="GEO Visual 3"
@@ -91,7 +91,7 @@ const GeoSeo = () => {
                                 />
                                 <p className="content-font text-lg lg:text-xl text-[#5D3E35] ms-1 mt-4">Focuses on direct recommendations & citations.</p>
                             </div>
-                            <div>
+                            <div className="mt-6 sm:mt-0">
                                 <Image
                                     src={geo4}
                                     alt="GEO Visual 4"

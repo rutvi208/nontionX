@@ -34,7 +34,7 @@ const Faq = () => {
                     </div>
                 </div>
 
-                <div className="mt-8 sm:mt-12 lg:mt-16 items-center text-center">
+                <div className="mt-8 sm:mt-12 lg:mt-16 items-center text-center hover:underline">
                     <a href="#" className="text-[#8E6754] text-base text-center">Have further questions? Email us on info@notionx.com</a>
                 </div>
             </div>

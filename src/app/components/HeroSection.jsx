@@ -11,7 +11,7 @@ import Navbar from '@/app/components/Navbar';
 const HeroSection = () => {
     return (
         <div>
-            <div className='relative w-full h-[780px] md:h-[640px] xl:h-[800px] overflow-hidden '>
+            <div className='relative w-full h-[780px] md:h-[640px] xl:h-[800px] overflow-hidden'>
                 <Image
                     src={HeroBg}
                     alt="Hero Background"

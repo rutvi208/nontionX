@@ -106,7 +106,7 @@ const Process = () => {
                             />
                             <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
-                                    <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Visibility Audit</h3>
+                                    <h3 className="heading-font font-semibold text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Visibility Audit</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                         We analyze your current AI presence and identify critical citation opportunities.                          
                                     </p>
@@ -141,7 +141,7 @@ const Process = () => {
                             />
                             <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
-                                    <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Schema Development</h3>
+                                    <h3 className="heading-font font-semibold text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Schema Development</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                     We create structured data that AI engines prioritize for citation.                       
                                     </p>
@@ -176,7 +176,7 @@ const Process = () => {
                             />
                             <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
-                                    <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">Citation Building</h3>
+                                    <h3 className="heading-font font-semibold text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">Citation Building</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                         We establish your business as the authoritative source across the web.                           
                                     </p>
@@ -211,7 +211,7 @@ const Process = () => {
                             />
                             <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
-                                    <h3 className="heading-font text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Monitoring & Optimization</h3>
+                                    <h3 className="heading-font font-semibold text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Monitoring & Optimization</h3>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                         We continuously track and improve your AI visibility.                        
                                     </p>

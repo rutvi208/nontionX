@@ -18,16 +18,16 @@ const CaseStudy = () => {
                     <div className="mt-6 lg:mt-8 flex flex-col xl:flex-row space-y-10 xl:space-y-0 space-x-0 lg:space-x-10">
                         {/* left section */}
                         <div className="flex flex-col space-y-6 lg:space-y-10">
-                            <div className='grid grid-cols-2 gap-6 sm:flex sm:flex-row space-x-6 sm:space-x-8 xl:space-x-12 mt-6 sm:mt-10 lg:mt-12'>
-                                <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5'>
+                            <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row space-x-6 sm:space-x-8 xl:space-x-12 mt-6 sm:mt-10 lg:mt-12'>
+                                <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
                                     <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+340%</p>
                                     <p className='content-font text-lg lg:text-xl mt-1'>AI Mentions</p>
                                 </div>
-                                <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5'>
+                                <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
                                     <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+180%</p>
                                     <p className='content-font text-lg lg:text-xl mt-1'>New Patient Calls</p>
                                 </div>
-                                <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5'>
+                                <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
                                     <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+250%</p>
                                     <p className='content-font text-lg lg:text-xl mt-1'>Local Pack Visibility</p>
                                 </div>
@@ -56,7 +56,7 @@ const CaseStudy = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='flex flex-row justify-between'>
+                                <div className='flex flex-row justify-between items-center'>
                                     <p className='text-xl lg:text-2xl font-medium'>The GEO Solution</p>
                                     <p className='content-font text-sm lg:text-lg'>Results in 6 weeks</p>
                                 </div>

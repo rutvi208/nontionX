@@ -12,7 +12,7 @@ const Cta = () => {
                     alt="CTA Background"
                     loading="lazy"
                     fill
-                    className='absolute inset-0 object-cover rounded-3xl sm:rounded-4xl lg:rounded-[2.5rem]' 
+                    className='absolute inset-0 object-fill sm:object-cover rounded-3xl sm:rounded-4xl lg:rounded-[2.5rem]' 
                     // z index not added
                 />
                 <div className='relative z-10'>
@@ -21,13 +21,15 @@ const Cta = () => {
                         <h1 className="heading-font text-center font-semibold text-4xl sm:text-6xl lg:text-[4.375rem] tracking-[-0.088rem] lg:w-7/12">Ready to Own AI Search in Market?</h1>
                     
                         <div className='mt-8 sm:mt-10 lg:mt-12 items-center space-y-2 sm:space-y-0 flex flex-col sm:flex-row justify-center sm:space-x-7 lg:space-x-9'>
+                            <div>
+                                <button className='group py-2.5 px-12 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                    Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
+                                </button>
+                            </div>
                             <button className='mt-auto py-2.5 px-6 cursor-pointer border-[0.0625rem] border-[var(--foreground)] bg-white flex items-center rounded-full text-base lg:text-lg font-bold hover:border-[var(--cta)] hover:text-[var(--cta)] transition duration-300'>
                                 Claim Your AI Visibility Audit
                             </button>
-                            <div>
-                            <button className='group py-2.5 px-6 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
-                                Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl'><HiMiniArrowSmallRight /></span>
-                            </button></div>
+                            
                         </div>
                     </div>
                 </div>

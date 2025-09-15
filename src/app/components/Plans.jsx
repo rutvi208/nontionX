@@ -28,55 +28,6 @@ const Plans = () => {
 
                         <div className='flex flex-col md:flex-row space-y-4 sm:space-y-0 md:space-x-8 lg:space-x-10 mt-24'>
                             {/* professional */}
-                            <div className='bg-[#151515] rounded-xl p-10 flex flex-col'>
-
-                                {/* professional */}
-                                <div className='flex flex-row space-x-3 items-center text-white'>
-                                   <Image 
-                                      src={Star}
-                                      alt='Star'
-                                      className='w-4 h-4 sm:w-fit sm:h-fit invert'
-                                   />
-                                   <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
-                                </div>
-
-                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$3,997</h1>
-                                <p className='text-white text-lg lg:text-xl content-font'>per month</p>
-
-                                <div>
-                                    {/* <div className='flex flex-row space-x-3 items-center lg:mt-[3.75rem]'>
-                                        <FiCheckCircle className='text-[#FAEEE6]'/>
-                                        <p className='text-white content-font text-lg lg:text-xl'>Competitive position defense</p>
-                                    </div> */}
-                                    <div className="space-y-3 my-10 lg:my-[3.75rem]">
-                                        {[
-                                            "Everything in Professional",
-                                            "Custom AI training datasets",
-                                            "Daily AI monitoring",
-                                            "All AI platforms optimization",
-                                            "Dedicated account manager",
-                                        ].map((feature, index) => (
-                                            <div
-                                            key={index}
-                                            className="flex flex-row space-x-3 items-center"
-                                            >
-                                            <FiCheckCircle className="text-[#FAEEE6]" />
-                                            <p className="text-white content-font text-lg lg:text-xl">
-                                                {feature}
-                                            </p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 cursor-pointer justify-center w-full place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
-                                    Get Started
-                                </button>
-
-                            </div>
-
-                            {/* enterprise */}
                             <div className='bg-[conic-gradient(at_left,_#EFE3DD,_#FDF8F5)] rounded-xl p-10 flex flex-col '>
 
                                 <div className='flex flex-row space-x-3 items-center'>
@@ -113,11 +64,56 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 cursor-pointer w-full justify-center place-content-center bg-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer w-full justify-center place-content-center bg-[var(--cta)] border-[0.0625rem] border-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 
                             </div>
+
+                            {/* enterprise */}
+                            <div className='bg-[#1F1F1F] rounded-xl p-10 flex flex-col'>
+
+                                <div className='flex flex-row space-x-3 items-center text-white'>
+                                   <Image 
+                                      src={Star}
+                                      alt='Star'
+                                      className='w-4 h-4 sm:w-fit sm:h-fit invert'
+                                   />
+                                   <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
+                                </div>
+
+                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$3,997</h1>
+                                <p className='text-white text-lg lg:text-xl content-font'>per month</p>
+
+                                <div>
+                                    <div className="space-y-3 my-10 lg:my-[3.75rem]">
+                                        {[
+                                            "Everything in Professional",
+                                            "Custom AI training datasets",
+                                            "Daily AI monitoring",
+                                            "All AI platforms optimization",
+                                            "Dedicated account manager",
+                                        ].map((feature, index) => (
+                                            <div
+                                            key={index}
+                                            className="flex flex-row space-x-3 items-center"
+                                            >
+                                            <FiCheckCircle className="text-[#FAEEE6]" />
+                                            <p className="text-white content-font text-lg lg:text-xl">
+                                                {feature}
+                                            </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* CTA */}
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer justify-center w-full place-content-center bg-[var(--cta)] border-[0.0625rem] border-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                    Get Started
+                                </button>
+
+                            </div>
+                            
                         </div>
 
                         {/* USP */}
@@ -126,11 +122,11 @@ const Plans = () => {
                                 <FiCheckCircle/>
                                 <p className='content-font text-base lg:text-xl'>Results in 6 weeks</p>
                             </div>
-                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:pe-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
+                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:px-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
                                 <AiOutlineUsergroupAdd/>
                                 <p className='content-font text-base lg:text-xl'>200+ businesses served</p>
                             </div>
-                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3'>
+                            <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:ps-8'>
                                 <FiShield/>
                                 <p className='content-font text-base lg:text-xl'>No long-term contracts</p>
                             </div>
@@ -142,23 +138,12 @@ const Plans = () => {
                             flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-12
                             grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12  ( col-span-2 sm:col-span-1)
                             */}
-                            <div className='mb-12 sm:mb-16 container mx-auto flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-12 justify-center items-center'>
-                                <div className='justify-center flex'>
-                                    <Image
-                                        src={Knowtion}
-                                        alt='Knowtion logo'
-                                    />
-                                </div>
+                            <div className='mb-12 sm:mb-16 container mx-auto grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12 justify-center items-center'>
+                                
                                 <div className='justify-center flex'>
                                     <Image
                                         src={FirefliesAI}
                                         alt='FirefliesAI logo'
-                                    />
-                                </div>
-                                <div className='justify-center flex'>
-                                    <Image
-                                        src={CimconSoftwares}
-                                        alt='CimconSoftwares logo'
                                     />
                                 </div>
                                 <div className='justify-center flex'>
@@ -169,8 +154,21 @@ const Plans = () => {
                                 </div>
                                 <div className='justify-center flex'>
                                     <Image
+                                        src={CimconSoftwares}
+                                        alt='CimconSoftwares logo'
+                                    />
+                                </div>
+                                
+                                <div className='justify-center flex'>
+                                    <Image
                                         src={Malish}
                                         alt='Malish logo'
+                                    />
+                                </div>
+                                <div className='justify-center flex col-span-2 sm:col-span-1'>
+                                    <Image
+                                        src={Knowtion}
+                                        alt='Knowtion logo'
                                     />
                                 </div>
                             </div>
