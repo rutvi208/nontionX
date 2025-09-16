@@ -3,7 +3,7 @@
 import {useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TbMenu } from "react-icons/tb";
+import { TbMenu, TbX } from "react-icons/tb";
 import Navlogo from '@/assets/logo/navbar-logo.svg';
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 
@@ -35,28 +35,38 @@ const Navbar = () => {
                             </button>
                         </nav>
                         <div onClick={handleNav} className='md:hidden z-20'>
-                            <TbMenu size={20} color={onTap ? '#4D4D4D' : '#222222'} />
+                            
+                            {nav ? (
+                            <TbX size={24} color="#222222" />  
+                                ) : (
+                                    <TbMenu size={24} color={onTap ? "#4D4D4D" : "#222222"} /> 
+                                )}
                         </div>
                             <div
                                 onClick={handleNav}
                                 className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-10 transform transition-transform duration-300 ease-in-out lg:hidden ${
-                                    nav ? "translate-x-0" : "-translate-x-full"}`}
-                                // className={nav ? 'overflow-hidden z-10 lg:hidden ease-in duration-300 fixed text-[var(--foreground)] left-0 top-0 w-full h-screen bg-[#F7F7F7] px-4 py-8 flex flex-col translate-x-0' : 'fixed top-0 h-screen -left-[100%] ease-in duration-500'}
-                            >
+                                    nav ? "translate-x-0" : "-translate-x-full"}`}                            >
 
-                            <div className='justify-between flex'>
-                                <Link href={"/"}><Image fetchPriority='high' src={Navlogo} alt="ResoNex logo" width={160} height={40}
-                                loading="lazy" /></Link>
+                                <div className='justify-center flex'>
+                                    <Link href={"/"}><Image fetchPriority='high' src={Navlogo} alt="ResoNex logo" width={160} height={40}
+                                    loading="lazy" /></Link>
+                                </div>
+
+                                <ul className='h-max w-full py-12'>
+                                    <li className='text-2xl py-4 flex items-start'><Link href="#howitworks">How it works</Link></li>
+                                    <li className='text-2xl py-4 flex items-start'><Link href='#pricing'>Pricing</Link></li>
+                                    <Link  
+                                        href="https://ai-seo-geo-auditor.netlify.app/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="group text-2xl py-4 flex items-center gap-2">
+                                        Claim Your AI Visibility Audit <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
+                                    </Link>
+                                    <button className='group mt-4 py-2.5 px-20 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] flex items-center rounded-full text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                        Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
+                                    </button>
+                                </ul>
                             </div>
-
-                            <ul className='h-max w-full text-center py-8'>
-                                <li className='px-4 text-2xl py-4'><Link href="#howitworks">How it works</Link></li>
-                                <li className='px-4 text-2xl py-4'><Link href='#pricing'>Pricing</Link></li>
-                                <button className='mt-4 py-2.5 px-6 bg-[var(--cta)] text-[var(--pastelbrown)] rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] transition duration-300'>
-                                    Book Strategy Call
-                                </button>
-                            </ul>
-                        </div>
                         </header>
                         </div>
                     </section>

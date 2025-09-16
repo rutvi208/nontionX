@@ -26,7 +26,7 @@ const Plans = () => {
                         <h1 className="heading-font text-white text-center font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">GEO Service Plans</h1>
                         <p className="text-lg lg:text-xl text-center text-white content-font mt-3">Choose the plan that fits your business goals and budget</p>
 
-                        <div className='flex flex-col md:flex-row space-y-4 sm:space-y-0 md:space-x-8 lg:space-x-10 mt-24'>
+                        <div className='flex flex-col md:flex-row space-y-4 sm:space-y-0 md:space-x-8 lg:space-x-10 mt-24 justify-center'>
                             {/* professional */}
                             <div className='bg-[conic-gradient(at_left,_#EFE3DD,_#FDF8F5)] rounded-xl p-10 flex flex-col '>
 
@@ -71,7 +71,7 @@ const Plans = () => {
                             </div>
 
                             {/* enterprise */}
-                            <div className='bg-[#1F1F1F] rounded-xl p-10 flex flex-col'>
+                            <div className='bg-[#1F1F1F] sm:w-[21rem] lg:w-[23rem] rounded-xl p-10 flex flex-col'>
 
                                 <div className='flex flex-row space-x-3 items-center text-white'>
                                    <Image 
@@ -117,7 +117,7 @@ const Plans = () => {
                         </div>
 
                         {/* USP */}
-                        <div className='mt-8 lg:mt-10 flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-4 lg:space-x-8 justify-center mx-auto'>
+                        <div className='mt-8 lg:mt-10 flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-4 lg:space-x-0 max-w-3xl justify-center mx-auto'>
                             <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:pe-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
                                 <FiCheckCircle/>
                                 <p className='content-font text-base lg:text-xl'>Results in 6 weeks</p>
@@ -133,21 +133,9 @@ const Plans = () => {
                         </div>
 
                         {/* Testimonial section */}
-                        <div className='bg-[#191919] rounded-xl mt-16 lg:mt-28 p-6 sm:p-8 lg:p-10 xl:px-16 max-w-5xl'>
+                        <div className='bg-[#191919] rounded-xl mt-16 lg:mt-28 p-6 sm:p-8 lg:p-10 xl:px-16 max-w-5xl mx-auto'>
                             <div className='mb-12 sm:mb-16 container mx-auto grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12 justify-center items-center'>
-                                <div className='justify-center flex'>
-                                    <Image
-                                        src={CimconSoftwares}
-                                        alt='CimconSoftwares logo'
-                                        className='w-16 h-16'
-                                    />
-                                </div>
-                                <div className='justify-center flex'>
-                                    <Image
-                                        src={Malish}
-                                        alt='Malish logo'
-                                    />
-                                </div>
+                                
                                 <div className='justify-center flex'>
                                     <Image
                                         src={FirefliesAI}
@@ -164,7 +152,20 @@ const Plans = () => {
                                         height={120}
                                     />
                                 </div>
-                                
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={CimconSoftwares}
+                                        alt='CimconSoftwares logo'
+                                        width={60}
+                                        height={60}
+                                    />
+                                </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={Malish}
+                                        alt='Malish logo'
+                                    />
+                                </div>
                                 <div className='justify-center flex col-span-2 sm:col-span-1'>
                                     <Image
                                         src={Knowtion}

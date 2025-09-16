@@ -15,7 +15,7 @@ const GeoSeo = () => {
             <div className="mx-auto container py-16 sm:py-20 lg:py-28 px-5 lg:px-8 2xl:px-0"> {/* px-12 2xl:px-20 */}
                 <div>
                     <h1 className="heading-font font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">GEO vs SEO: What Changed</h1>
-                    <p className="text-lg lg:text-xl content-font mt-3">The AI search revolution requires a completely different approach to getting found online</p>
+                    <p className="text-lg lg:text-xl content-font mt-3">The AI search revolution requires a completely different approach to getting found online.</p>
                 </div>
 
                 {/* mobile content */}

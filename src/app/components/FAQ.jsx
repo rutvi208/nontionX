@@ -1,20 +1,48 @@
 "use client";
 
-import {useState, useRef } from 'react';
-import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi2";
+import {useState } from 'react';
+
+const faqs = [
+  {
+    question: "What is GEO and how is it different from traditional SEO?",
+    answer:
+      "Dominate AI Search Results Before Your Competitors Do. The AI search revolution requires a completely different approach to getting found online.",
+  },
+  {
+    question: "What's included in the AI Visibility Audit?",
+    answer:
+      "Dominate AI Search Results Before Your Competitors Do. The AI search revolution requires a completely different approach to getting found online.",
+  },
+  {
+    question: "How quickly will I see results from GEO services?",
+    answer:
+      "Dominate AI Search Results Before Your Competitors Do. The AI search revolution requires a completely different approach to getting found online.",
+  },
+  {
+    question: "Can I cancel my GEO service anytime?",
+    answer:
+      "Dominate AI Search Results Before Your Competitors Do. The AI search revolution requires a completely different approach to getting found online.",
+  },
+  {
+    question: "Which AI platforms do you optimize for?",
+    answer:
+      "Dominate AI Search Results Before Your Competitors Do. The AI search revolution requires a completely different approach to getting found online.",
+  },
+  {
+    question: "How do you measure GEO success?",
+    answer:
+      "Dominate AI Search Results Before Your Competitors Do. The AI search revolution requires a completely different approach to getting found online.",
+  },
+];
+
 
 const Faq = () => {
 
-    //Dropdown content FAQ
-    const [isOpen, setIsOpen] = useState(false);
+    const [openIndex, setOpenIndex] = useState(null);
 
-    const toggleSection = (section) => {
-    setIsOpen((prev) => ({
-        ...prev,
-        [section]: !prev[section],
-    }));
+    const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
     };
-    const contentRef = useRef(null);
 
     return (
         <div>
@@ -23,30 +51,38 @@ const Faq = () => {
                 <p className="text-lg lg:text-xl text-center content-font mt-3">Everything you need to know about GEO and AI search optimization</p>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 mt-16 lg:mt-20">
-                    {/* <div className="rounded-lg border-[0.0625rem] border-[var(--stroke)] text-lg lg:text-xl px-6"
-                        onClick={() => toggleSection('technologyStrategy')}
-                        aria-expanded={isOpen['technologyStrategy']}
-                        aria-controls="technologyStrategy-content"
-                        role="button"
-                        aria-label="Toggle Technology Strategy Section"
-                    >
-                        <div className="flex justify-between items-center cursor-pointer py-4">
-                            <p className="content-font">What is GEO and how is it different from traditional SEO?</p>
-                            <span>{isOpen['technologyStrategy'] ? <HiOutlineChevronUp size={20} color='#AD8775' style={{ strokeWidth: 3 }} /> : <HiOutlineChevronDown size={20} color='#AD8775' style={{ strokeWidth: 3 }} />}</span>
+                    {faqs.map((faq, index) => (
+                        <div key={index} className="self-start">
+                        <div className="rounded-lg border border-[var(--stroke)] text-lg lg:text-xl px-6">
+                            {/* Question */}
+                            <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full flex flex-row items-center justify-between py-4 text-left"
+                            >
+                            <p className="content-font">{faq.question}</p>
+                            <span className="text-[#AD8775] text-3xl">
+                                {openIndex === index ? "−" : "+"}
+                            </span>
+                            </button>
+
+                            {/* Answer */}
+                            <div
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                                openIndex === index ? "max-h-40" : "max-h-0"
+                            }`}
+                            >
+                            <div className="pb-4">
+                                <p className="text-base lg:text-lg xl:text-xl text-[#333]">
+                                {faq.answer}
+                                </p>
+                            </div>
+                            </div>
                         </div>
-                        <div id="technologyStrategy-content" ref={contentRef}
-                            style={{
-                                maxHeight: isOpen['technologyStrategy']
-                                ? `${contentRef.current?.scrollHeight}px`
-                                : "0px",
-                            }}
-                            className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                                            isOpen["technologyStrategy"] ? "max-h-max" : "max-h-0"}`}>
-                            <p className="pb-2 text-lg xl:text-xl">
-                                Align technology initiatives with business objectives through comprehensive roadmaps and practical implementation plans.
-                            </p>
                         </div>
-                    </div> */}
+                    ))}
+                </div>
+                {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 mt-16 lg:mt-20">
+                    
                     <div className="rounded-lg border-[0.0625rem] border-[var(--stroke)] text-lg lg:text-xl py-4 px-6 flex flex-row items-center justify-between">
                         <p className="content-font">What is GEO and how is it different from traditional SEO?</p>
                         <p className="text-[#AD8775] text-3xl">+</p>
@@ -71,7 +107,7 @@ const Faq = () => {
                         <p className="content-font">How do you measure GEO success?</p>
                         <p className="text-[#AD8775] text-3xl">+</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="mt-8 sm:mt-12 lg:mt-16 items-center text-center hover:underline">
                     <a href="mailto:info@notionx.com" className="text-[#8E6754] text-base text-center">Have further questions? Email us on info@notionx.com</a>

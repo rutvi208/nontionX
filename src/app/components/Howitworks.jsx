@@ -66,7 +66,8 @@ const Howitworks = () => {
             {/* Audit link section  */}
             <div className="mt-10 lg:mt-24 xl:mt-36 container mx-auto justify-center place-items-center text-center ">
                 <h1 className="heading-font text-3xl lg:text-5xl">Know your AI presence. Grow your advantage.</h1>
-                <p className="content-font text-base mt-2 lg:mt-3 lg:w-4/12">Enter a website URL to analyze its performance for traditional search engines and AI-driven platforms.</p>
+                <p className="content-font text-base mt-2 lg:mt-3 lg:w-4/12 mx-auto text-center">Enter a website URL to analyze its performance for traditional search engines and AI-driven platforms.</p>
+                
                 <div className="mt-5 lg:mt-10 text-center mx-auto">
                     <Link 
                         href="https://ai-seo-geo-auditor.netlify.app/" 
