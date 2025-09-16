@@ -40,13 +40,10 @@ html {
   letter-spacing: -0.01em;
 }
 
-/* @supports (-webkit-touch-callout: none) {
+/* Target only Safari/iOS */
+@supports (-webkit-touch-callout: none) {
   img[data-nimg] {
-    color: inherit !important;
-  }
-} */
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  img[data-nimg] {
-    color: inherit !important;
+    color: inherit !important; /* force override */
+    background-color: transparent !important; /* ensure no bg leaks */
   }
 }

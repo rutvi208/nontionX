@@ -14,7 +14,6 @@ const HeroSection = () => {
                     src={HeroBg}
                     alt="Hero Background"
                     fill
-                    unoptimized
                     loading="lazy"
                     className='absolute inset-0 object-cover h-full w-full'
                 />
@@ -55,10 +54,12 @@ const HeroSection = () => {
                                          src={Hero}
                                         alt="Hero Image"
                                         loading="lazy"
-                                        unoptimized
-                                        className="rounded-lg object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
+                                        className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
                                     />
                                 </div>
+                                {/* <div>
+                                    <Hero className="object-cover w-full h-auto sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit" />
+                                </div> */}
                             </div>
                         </div>
                     </section>
