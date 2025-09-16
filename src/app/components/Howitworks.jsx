@@ -1,5 +1,6 @@
 
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
+import Link from "next/link";
 
 const Howitworks = () => {
     return (
@@ -67,9 +68,13 @@ const Howitworks = () => {
                 <h1 className="heading-font text-3xl lg:text-5xl">Know your AI presence. Grow your advantage.</h1>
                 <p className="content-font text-base mt-2 lg:mt-3 lg:w-4/12">Enter a website URL to analyze its performance for traditional search engines and AI-driven platforms.</p>
                 <div className="mt-5 lg:mt-10 text-center mx-auto">
-                    <a href="#" className="group text-[var(--cta)] lg:text-lg font-semibold hover:underline flex justify-center-safe items-center text-center mx-auto gap-2">
+                    <Link 
+                        href="https://ai-seo-geo-auditor.netlify.app/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="group text-[var(--cta)] lg:text-lg font-semibold hover:underline flex justify-center-safe items-center text-center mx-auto gap-2">
                         Get your AI visibility check <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

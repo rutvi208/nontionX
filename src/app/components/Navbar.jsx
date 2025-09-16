@@ -39,7 +39,9 @@ const Navbar = () => {
                         </div>
                             <div
                                 onClick={handleNav}
-                                className={nav ? 'overflow-hidden z-10 lg:hidden ease-in duration-300 fixed text-[var(--foreground)] left-0 top-0 w-full h-screen bg-[#F7F7F7] px-4 py-8 flex flex-col translate-x-0' : 'fixed top-0 h-screen -left-[100%] ease-in duration-500'}
+                                className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-10 transform transition-transform duration-300 ease-in-out lg:hidden ${
+                                    nav ? "translate-x-0" : "-translate-x-full"}`}
+                                // className={nav ? 'overflow-hidden z-10 lg:hidden ease-in duration-300 fixed text-[var(--foreground)] left-0 top-0 w-full h-screen bg-[#F7F7F7] px-4 py-8 flex flex-col translate-x-0' : 'fixed top-0 h-screen -left-[100%] ease-in duration-500'}
                             >
 
                             <div className='justify-between flex'>

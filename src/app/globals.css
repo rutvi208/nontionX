@@ -40,6 +40,8 @@ html {
   letter-spacing: -0.01em;
 }
 
-img[data-nimg] {
-  color: inherit !important;
+@supports (-webkit-touch-callout: none) {
+  img[data-nimg] {
+    color: inherit !important;
+  }
 }

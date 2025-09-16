@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import CtaBg from './../../assets/backgrounds/CTAbg.png';
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
+import Link from "next/link";
 
 const Cta = () => {
     return (
@@ -26,9 +27,13 @@ const Cta = () => {
                                     Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                                 </button>
                             </div>
-                            <button className='mt-auto py-2.5 px-6 cursor-pointer border-[0.0625rem] border-[var(--foreground)] bg-white flex items-center rounded-full text-base lg:text-lg font-bold hover:border-[var(--cta)] hover:text-[var(--cta)] transition duration-300'>
+                            <Link 
+                                href="https://ai-seo-geo-auditor.netlify.app/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className='mt-auto py-2.5 px-6 cursor-pointer border-[0.0625rem] border-[var(--foreground)] bg-white flex items-center rounded-full text-base lg:text-lg font-bold hover:border-[var(--cta)] hover:text-[var(--cta)] transition duration-300'>
                                 Claim Your AI Visibility Audit
-                            </button>
+                            </Link>
                             
                         </div>
                     </div>

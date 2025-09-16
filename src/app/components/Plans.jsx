@@ -7,7 +7,7 @@ import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { FiShield } from "react-icons/fi";
 import Knowtion from './../../assets/Plans/Knowtion.svg';
 import FirefliesAI from './../../assets/Plans/FirefliesAI.svg';
-import CimconSoftwares from './../../assets/Plans/Cimcon-software.svg';
+import CimconSoftwares from './../../assets/Plans/Cimcon.svg';
 import KenGanley from './../../assets/Plans/Kenganley.svg';
 import Malish from './../../assets/Plans/Malish.svg';
 
@@ -34,7 +34,7 @@ const Plans = () => {
                                    <Image 
                                       src={Star}
                                       alt='Star'
-                                      className='w-4 h-4 sm:w-fit sm:h-fit'
+                                      className='w-4 h-4 sm:w-4 sm:h-4'
                                    />
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>professional</h1>
                                 </div>
@@ -77,7 +77,7 @@ const Plans = () => {
                                    <Image 
                                       src={Star}
                                       alt='Star'
-                                      className='w-4 h-4 sm:w-fit sm:h-fit invert'
+                                      className='w-4 h-4 sm:w-4 sm:h-4 invert'
                                    />
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
                                 </div>
@@ -134,41 +134,43 @@ const Plans = () => {
 
                         {/* Testimonial section */}
                         <div className='bg-[#191919] rounded-xl mt-16 lg:mt-28 p-6 sm:p-8 lg:p-10 xl:px-16 max-w-5xl'>
-                            {/* grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8
-                            flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-12
-                            grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12  ( col-span-2 sm:col-span-1)
-                            */}
                             <div className='mb-12 sm:mb-16 container mx-auto grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12 justify-center items-center'>
-                                
-                                <div className='justify-center flex'>
-                                    <Image
-                                        src={FirefliesAI}
-                                        alt='FirefliesAI logo'
-                                    />
-                                </div>
-                                <div className='justify-center flex'>
-                                    <Image
-                                        src={KenGanley}
-                                        alt='KenGanley logo'
-                                    />
-                                </div>
                                 <div className='justify-center flex'>
                                     <Image
                                         src={CimconSoftwares}
                                         alt='CimconSoftwares logo'
+                                        className='w-16 h-16'
                                     />
                                 </div>
-                                
                                 <div className='justify-center flex'>
                                     <Image
                                         src={Malish}
                                         alt='Malish logo'
                                     />
                                 </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={FirefliesAI}
+                                        alt='FirefliesAI logo'
+                                        width={160}
+                                        height={120}
+                                    />
+                                </div>
+                                <div className='justify-center flex'>
+                                    <Image
+                                        src={KenGanley}
+                                        alt='KenGanley logo'
+                                        width={160}
+                                        height={120}
+                                    />
+                                </div>
+                                
                                 <div className='justify-center flex col-span-2 sm:col-span-1'>
                                     <Image
                                         src={Knowtion}
                                         alt='Knowtion logo'
+                                        width={160}
+                                        height={120}
                                     />
                                 </div>
                             </div>

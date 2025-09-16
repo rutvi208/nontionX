@@ -4,9 +4,7 @@ import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import Hero from "./../../assets/HeroSection/HeroVisual.svg";
 import HeroBg from './../../assets/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
-// import ChatGPT from './../../assets/HeroSection/ChatGPT.svg';
-// import Perplexity from './../../assets/HeroSection/Perplexity.svg';
-// import Gemini from './../../assets/HeroSection/Gemini.png';
+import Link from "next/link";
 
 const HeroSection = () => {
     return (
@@ -16,6 +14,7 @@ const HeroSection = () => {
                     src={HeroBg}
                     alt="Hero Background"
                     fill
+                    unoptimized
                     loading="lazy"
                     className='absolute inset-0 object-cover h-full w-full'
                 />
@@ -39,9 +38,13 @@ const HeroSection = () => {
                                 </h1>
 
                                 <div>
-                                    <a href="#" className="group text-[var(--cta)] lg:text-lg font-semibold hover:underline flex items-center gap-2">
+                                    <Link  
+                                        href="https://ai-seo-geo-auditor.netlify.app/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="group text-[var(--cta)] lg:text-lg font-semibold hover:underline flex items-center gap-2">
                                         Audit Your AI Visibility Now <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
