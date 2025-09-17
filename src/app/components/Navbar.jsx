@@ -55,14 +55,15 @@ const Navbar = () => {
                                 <ul className='h-max w-full pt-12'>
                                     <li className='text-2xl py-4 flex items-start'><Link href="#howitworks">How it works</Link></li>
                                     <li className='text-2xl py-4 flex items-start'><Link href='#pricing'>Pricing</Link></li>
-                                    <Link  
-                                        href="https://ai-seo-geo-auditor.netlify.app/" 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="group text-2xl py-4 flex items-center gap-2">
-                                        Claim Your AI Visibility Audit <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
-                                    </Link>
-                                    
+                                    <li>
+                                        <Link  
+                                            href="https://ai-seo-geo-auditor.netlify.app/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="group text-2xl py-4 flex items-center gap-2">
+                                            Claim Your AI Visibility Audit <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
+                                        </Link>
+                                    </li>
                                 </ul>
                                 <div>
                                     <button className='group mt-4 py-2.5 px-20 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] flex items-center rounded-full text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>

@@ -106,7 +106,7 @@ const Process = () => {
                             />
                             <div className="relative inset-0 z-10 p-3 lg:p-5 h-full flex flex-col justify-between">
                                 <div className=''>
-                                    <h3 className="heading-font font-semibold text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Visibility Audit</h3>
+                                    <h2 className="heading-font font-semibold text-left text-lg lg:text-2xl tracking-[-0.06rem] mb-2">AI Visibility Audit</h2>
                                     <p className="text-base lg:text-lg text-left text-[#0f0a08c1] content-font">
                                         We analyze your current AI presence and identify critical citation opportunities.                          
                                     </p>

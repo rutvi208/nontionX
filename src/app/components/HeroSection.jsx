@@ -57,14 +57,26 @@ const HeroSection = () => {
                                         className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
                                     />
                                 </div> */}
-                                <div className="relative w-[380px] h-[300px] sm:w-[600px] sm:h-[360px]">
-                                    <Image
+                                <div className="relative w-[380px] h-[300px] xl:w-[600px] xl:h-[360px]">
+                                    {/* <Image
                                          src={Hero}
                                         alt="Hero Image"
                                         priority
+                                        fetchPriority="high"
+                                        loading="eager"
                                         fill
                                         className="object-contain"
+                                    /> */}
+                                    <Image
+                                        src="/images/HeroVisual.svg"
+                                        alt="Hero Image"
+                                        fill
+                                        priority
+                                        fetchPriority="high"
+                                        loading="eager"
+                                        className="object-contain"
                                     />
+                                    {/* <Hero className="w-full h-full object-contain" /> */}
                                 </div>
                             </div>
                         </div>

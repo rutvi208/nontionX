@@ -8,6 +8,7 @@ import CaseStudy from '@/app/components/CaseStudy';
 import Cta from '@/app/components/CTA';
 import Faq from '@/app/components/FAQ';
 import Footer from '@/app/components/Footer';
+import ScrollToTop from '@/app/components/ScrollToTop'; 
 
 export const metadata = {
   title: "notionX | GEO",
@@ -18,6 +19,8 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
+      <ScrollToTop />
+      
       {/* Navbar + Hero Section */}
       <div id="/"><HeroSection/></div>
 
