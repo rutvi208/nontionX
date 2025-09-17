@@ -33,13 +33,13 @@ const Footer = () => {
 
                 {/* right */}
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 mt-8 sm:justify-between sm:items-end">
-                    <div className="">
-                        <Image
+                    <div>
+                        <Link href={"/"}><Image
                             src={logo}
                             alt="notionx Logo"
                             loading="lazy"
                             className='w-fit h-fit'
-                        />
+                        /></Link>
                     </div>
                     <div>
                         <div className="text-white flex flex-col space-y-4 sm:space-y-0 sm:flex-row mb-6 lg:mb-8 content-font text-sm">
@@ -48,10 +48,10 @@ const Footer = () => {
                             </div>
                             <div className="flex flex-row">
                                 <div className="border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p>Privacy Policy</p>
+                                    <p><Link href="/policy" target="_blank" rel="noopener noreferrer">Privacy Policy</Link></p>
                                 </div>
                                 <div className="px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p>Terms of Services</p>
+                                    <p><Link href="/terms" target="_blank" rel="noopener noreferrer">Terms of Services</Link></p>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import Hero from "./../../assets/HeroSection/HeroVisual.svg";
+import HeroVisual from "./../../assets/HeroSection/Hero-Visual-image.svg";
 import HeroBg from './../../assets/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
 import Link from "next/link";
@@ -31,7 +31,7 @@ const HeroSection = () => {
                                     <span className="text-sm heading-font">AI Search Dominates.</span>
                                 </div>
 
-                                <h1 className="text-[2.5rem] md:text-5xl lg:text-6xl xl:text-[5.375rem] leading-[2.6rem] lg:leading-[4.6rem] xl:leading-[5.25rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
+                                <h1 className="text-[2.5rem] md:text-5xl lg:text-6xl xl:text-[5.375rem] leading-[2.6rem] lg:leading-[4rem] xl:leading-[5.25rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
                                     Dominate AI <span className="font-semibold">Search Results </span>
                                     Before Your Competitors Do
                                 </h1>
@@ -57,26 +57,16 @@ const HeroSection = () => {
                                         className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
                                     />
                                 </div> */}
-                                <div className="relative w-[380px] h-[300px] xl:w-[600px] xl:h-[360px]">
-                                    {/* <Image
-                                         src={Hero}
-                                        alt="Hero Image"
-                                        priority
-                                        fetchPriority="high"
-                                        loading="eager"
-                                        fill
-                                        className="object-contain"
-                                    /> */}
+                                <div className="relative w-[380px] h-[300px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
                                     <Image
-                                        src="/images/HeroVisual.svg"
+                                         src={HeroVisual}
                                         alt="Hero Image"
-                                        fill
                                         priority
                                         fetchPriority="high"
                                         loading="eager"
+                                        fill
                                         className="object-contain"
                                     />
-                                    {/* <Hero className="w-full h-full object-contain" /> */}
                                 </div>
                             </div>
                         </div>
