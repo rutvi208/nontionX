@@ -52,7 +52,7 @@ const Navbar = () => {
                                     loading="lazy" /></Link>
                                 </div>
 
-                                <ul className='h-max w-full py-12'>
+                                <ul className='h-max w-full pt-12'>
                                     <li className='text-2xl py-4 flex items-start'><Link href="#howitworks">How it works</Link></li>
                                     <li className='text-2xl py-4 flex items-start'><Link href='#pricing'>Pricing</Link></li>
                                     <Link  
@@ -62,10 +62,13 @@ const Navbar = () => {
                                         className="group text-2xl py-4 flex items-center gap-2">
                                         Claim Your AI Visibility Audit <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
                                     </Link>
+                                    
+                                </ul>
+                                <div>
                                     <button className='group mt-4 py-2.5 px-20 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] flex items-center rounded-full text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                                         Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                                     </button>
-                                </ul>
+                                </div>
                             </div>
                         </header>
                         </div>

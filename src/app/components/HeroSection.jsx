@@ -31,7 +31,7 @@ const HeroSection = () => {
                                     <span className="text-sm heading-font">AI Search Dominates.</span>
                                 </div>
 
-                                <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-[5.375rem] lg:leading-[4.6rem] xl:leading-[5.25rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
+                                <h1 className="text-[2.5rem] md:text-5xl lg:text-6xl xl:text-[5.375rem] leading-[2.6rem] lg:leading-[4.6rem] xl:leading-[5.25rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
                                     Dominate AI <span className="font-semibold">Search Results </span>
                                     Before Your Competitors Do
                                 </h1>
@@ -41,7 +41,7 @@ const HeroSection = () => {
                                         href="https://ai-seo-geo-auditor.netlify.app/" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="group text-[var(--cta)] lg:text-lg font-semibold hover:underline flex items-center gap-2">
+                                        className="group text-[var(--cta)] text-lg lg:text-xl font-bold hover:underline flex items-center gap-2">
                                         Audit Your AI Visibility Now <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
                                     </Link>
                                 </div>
@@ -49,17 +49,23 @@ const HeroSection = () => {
 
                             {/* Right Image Section */}
                             <div>
-                                <div>
+                                {/* <div>
                                     <Image
                                          src={Hero}
                                         alt="Hero Image"
-                                        loading="lazy"
+                                        priority
                                         className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
                                     />
-                                </div>
-                                {/* <div>
-                                    <Hero className="object-cover w-full h-auto sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit" />
                                 </div> */}
+                                <div className="relative w-[380px] h-[300px] sm:w-[600px] sm:h-[360px]">
+                                    <Image
+                                         src={Hero}
+                                        alt="Hero Image"
+                                        priority
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </section>

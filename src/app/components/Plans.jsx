@@ -64,7 +64,7 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 cursor-pointer w-full justify-center place-content-center bg-[var(--cta)] border-[0.0625rem] border-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer font-semibold w-full justify-center place-content-center bg-[var(--cta)] border-[0.0625rem] border-[var(--cta)] text-white flex items-center rounded-full text-base lg:text-lg hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 
@@ -108,7 +108,7 @@ const Plans = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button className='mt-auto py-2.5 px-6 cursor-pointer justify-center w-full place-content-center bg-[var(--cta)] border-[0.0625rem] border-[var(--cta)] text-[var(--pastelbrown)] flex items-center rounded-full text-base lg:text-lg font-medium hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                <button className='mt-auto py-2.5 px-6 cursor-pointer font-semibold justify-center w-full place-content-center bg-[var(--cta)] border-[0.0625rem] border-[var(--cta)] text-white flex items-center rounded-full text-base lg:text-lg hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                                     Get Started
                                 </button>
 

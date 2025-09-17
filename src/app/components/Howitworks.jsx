@@ -73,7 +73,7 @@ const Howitworks = () => {
                         href="https://ai-seo-geo-auditor.netlify.app/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="group text-[var(--cta)] lg:text-lg font-semibold hover:underline flex justify-center-safe items-center text-center mx-auto gap-2">
+                        className="group text-[var(--cta)] text-lg lg:text-xl font-bold hover:underline flex justify-center-safe items-center text-center mx-auto gap-2">
                         Get your AI visibility check <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
                     </Link>
                 </div>
