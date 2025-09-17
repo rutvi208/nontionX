@@ -31,10 +31,14 @@ const HeroSection = () => {
                                     <span className="text-sm heading-font">AI Search Dominates.</span>
                                 </div>
 
-                                <h1 className="text-[2.5rem] md:text-5xl lg:text-6xl xl:text-[5.375rem] leading-[2.6rem] lg:leading-[4rem] xl:leading-[5.25rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
+                                <h1 className="text-[2rem] md:text-[2.5rem] lg:text-5xl xl:text-[4rem] 2xl:text-[4.375rem] leading-[2.4rem] lg:leading-[3rem] xl:leading-[4.8rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
+                                    Win AI <span className="font-semibold">Search Results </span>
+                                    & Capture More Customers Before Your Competitors Even Show Up
+                                </h1>
+                                {/* <h1 className="text-[2.5rem] md:text-5xl lg:text-6xl xl:text-[5.375rem] leading-[2.6rem] lg:leading-[4rem] xl:leading-[5.25rem] tracking-[-0.115rem] font-light text-[var(--foreground)] heading-font">
                                     Dominate AI <span className="font-semibold">Search Results </span>
                                     Before Your Competitors Do
-                                </h1>
+                                </h1> */}
 
                                 <div>
                                     <Link  
@@ -42,7 +46,7 @@ const HeroSection = () => {
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                         className="group text-[var(--cta)] text-lg lg:text-xl font-bold hover:underline flex items-center gap-2">
-                                        Audit Your AI Visibility Now <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
+                                        Audit My AI Visibility Now <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
                                     </Link>
                                 </div>
                             </div>
