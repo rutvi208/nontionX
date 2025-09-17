@@ -9,6 +9,7 @@ import Cta from '@/app/components/CTA';
 import Faq from '@/app/components/FAQ';
 import Footer from '@/app/components/Footer';
 import ScrollToTop from '@/app/components/ScrollToTop'; 
+import ScrollButton from '@/app/components/ScrollButton'; 
 
 export const metadata = {
   title: "notionX | GEO",
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <div>
       <ScrollToTop />
+      <ScrollButton/>
       
       {/* Navbar + Hero Section */}
       <div id="/"><HeroSection/></div>

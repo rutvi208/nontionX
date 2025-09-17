@@ -5,8 +5,8 @@ import Star from './../../assets/Plans/Star.png';
 import { FiCheckCircle } from "react-icons/fi";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { FiShield } from "react-icons/fi";
-import Knowtion from './../../assets/Plans/Knowtion.svg';
-import FirefliesAI from './../../assets/Plans/FirefliesAI.svg';
+import Knowtion from './../../assets/Plans/Knowtion.png';
+import Firelands from './../../assets/Plans/Firelands.png';
 import CimconSoftwares from './../../assets/Plans/Cimcon.png';
 import KenGanley from './../../assets/Plans/KenGanley.png';
 import Malish from './../../assets/Plans/Malish.svg';
@@ -138,10 +138,10 @@ const Plans = () => {
                                 
                                 <div className='justify-center flex'>
                                     <Image
-                                        src={FirefliesAI}
+                                        src={Firelands}
                                         alt='FirefliesAI logo'
-                                        width={160}
-                                        height={120}
+                                        width={120}
+                                        height={100}
                                     />
                                 </div>
                                 <div className='justify-center flex'>
