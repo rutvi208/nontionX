@@ -10,7 +10,7 @@ import Faq from '@/app/components/FAQ';
 import Footer from '@/app/components/Footer';
 import ScrollToTop from '@/app/components/ScrollToTop'; 
 import ScrollButton from '@/app/components/ScrollButton'; 
-import { HiMiniArrowSmallRight } from "react-icons/hi2";
+// import Button from '@/app/components/Button';
 
 export const metadata = {
   title: "notionX | GEO",
@@ -46,14 +46,9 @@ export default function Home() {
       <div><Footer/></div>
 
       {/* ✅ Sticky CTA (visible only on mobile) */}
-      <div className="fixed bottom-4 left-0 right-0 flex justify-center z-50 sm:hidden">
-        <button className='group py-2.5 px-6 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] border-[0.0625rem] border-[var(--cta)] flex items-center rounded-full text-base font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[var(--cta)] transition duration-300'>
-          Book a GEO Strategy Call 
-          <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'>
-            <HiMiniArrowSmallRight />
-          </span>
-        </button>
-      </div>
+      {/* <div className="fixed bottom-4 left-0 right-0 flex justify-center z-50 sm:hidden">
+        <Button/>
+      </div> */}
 
     </div>
   );

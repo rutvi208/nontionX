@@ -1,3 +1,4 @@
+"use client";
 
 import Image from "next/image";
 import logo from '@/../public/images/logo/footer-logo.svg';
@@ -23,7 +24,7 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className="justify-end-safe">
-                        <button
+                        <button onClick={() => window.open('https://cal.com/notionx/20min', '_blank')}
                             className='group py-2.5 px-10 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] border-[0.0625rem] border-[var(--cta)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
                             Book a GEO Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                         </button>

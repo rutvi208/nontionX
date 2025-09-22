@@ -97,7 +97,7 @@ const GeoSeo = () => {
                                     alt="GEO Visual 4"
                                     className="w-fit h-fit"
                                 />
-                                <p className="content-font text-lg lg:text-xl text-[#5D3E35] ms-1 mt-4">Can deliver results in as little as 30-60 days.</p>
+                                <p className="content-font text-lg lg:text-xl text-[#5D3E35] ms-1 mt-4">Can deliver results in as little as 60-90 days.</p>
                             </div>
                         </div>
                     </div>
