@@ -22,7 +22,7 @@ const Plans = () => {
                     className='absolute inset-0 object-cover h-full w-full ' 
                     // z index not added
                 />
-                <div className='relative inset-0 z-10'>
+                <div className='relative inset-0 z-auto'>
                     <div className="container mx-auto place-items-center py-20 px-4">
                         <h1 className="heading-font text-white text-center font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">GEO Service Plans</h1>
                         <p className="text-lg lg:text-xl text-center text-white content-font mt-3">Choose the plan that fits your business goals and budget</p>

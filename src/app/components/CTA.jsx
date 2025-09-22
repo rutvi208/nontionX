@@ -17,7 +17,7 @@ const Cta = () => {
                     className='absolute inset-0 object-fill sm:object-cover rounded-3xl sm:rounded-4xl lg:rounded-[2.5rem]' 
                     // z index not added
                 />
-                <div className='relative z-10 rounded-3xl sm:rounded-4xl lg:rounded-[2.5rem] bg-gradient-l from-yellow-200 from-5% via-20% via-white to-90% to-yellow-100 sm:bg-[#ffffff02]'>
+                <div className='relative z-auto rounded-3xl sm:rounded-4xl lg:rounded-[2.5rem] bg-gradient-l from-yellow-200 from-5% via-20% via-white to-90% to-yellow-100 sm:bg-[#ffffff02]'>
                     <div className="container mx-auto place-items-center py-8 sm:py-20 px-4">
                         <p className="text-base sm:text-lg lg:text-xl text-center content-font mb-2 sm:mb-6 lg:mb-8 w-11/12 lg:w-7/12 xl:w-5/12 mx-auto">Professional GEO services that make your business the #1 AI recommendation in your market.</p>
                         <h1 className="heading-font text-center font-semibold text-3xl sm:text-6xl lg:text-[4.375rem] tracking-[-0.088rem] lg:w-7/12 mx-auto">Ready to Own AI Search in Market?</h1>

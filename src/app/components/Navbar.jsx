@@ -16,6 +16,7 @@ const Navbar = () => {
           setOnTap((prev) => !prev); // Toggle color
         // Your existing logic for handling navigation
         }
+    
 
     return (
         <div>
@@ -44,8 +45,8 @@ const Navbar = () => {
                         </div>
                             <div
                                 onClick={handleNav}
-                                className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-10 transform transition-transform duration-300 ease-in-out lg:hidden ${
-                                    nav ? "translate-x-0" : "-translate-x-full"}`}                            >
+                                className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+                                    nav ? "translate-x-0" : "-translate-x-full"} overflow-hidden`}                            >
 
                                 <div className='justify-center flex'>
                                     <Link href={"/"}><Image fetchPriority='high' src={Navlogo} alt="ResoNex logo" width={160} height={40}

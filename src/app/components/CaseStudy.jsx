@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import TesstimonialBg from "@/../public/images/CaseStudy/Testimonial-Bg.png";
 
 const caseStudies = [
   {
+    category: "Architecture",
     title: "Extension Architecture",
     stats: [
       { value: "+33%", label: "AI Mentions" },
@@ -21,6 +22,7 @@ const caseStudies = [
       "We optimized AI-focused content clusters, enhanced internal linking, and expanded schema markup to boost AI Overview indexing and drive ChatGPT mentions.",
   },
   {
+    category: "Education",
     title: "EC Council",
     stats: [
       { value: "+26%", label: "AI Mentions" },
@@ -35,6 +37,7 @@ const caseStudies = [
       "We restructured technical pages, implemented AI-optimized FAQ schema, and strategically expanded content for Gemini and Google AI Overviews — unlocking rapid visibility across AI search.",
   },
   {
+    category: "Automotive",
     title: "Ken Ganley Mentor CDJR",
     stats: [
       { value: "+87%", label: "AI Mentions" },
@@ -49,6 +52,7 @@ const caseStudies = [
       "We applied local + optimized high-value inventory keywords, and expanded coverage in Gemini to drive fast AI mentions and higher page indexing growth.",
   },
   {
+    category: "Automotive",
     title: "Ken Ganley Kia",
     stats: [
       { value: "+15%", label: "AI Mentions" },
@@ -63,6 +67,7 @@ const caseStudies = [
       "We scaled targeted content refreshes and focused on conversational search queries — generating a surge of ChatGPT mentions and AI visibility.",
   },
   {
+    category: "Insurance",
     title: "Tradesman Saver",
     stats: [
       { value: "+43%", label: "AI Mentions Growth" },
@@ -118,7 +123,8 @@ const CaseStudy = () => {
                 className="w-full flex-shrink-0 px-5 lg:px-8 2xl:px-0"
               >
                 <div className="border-[0.0625rem] border-[#9B715C] rounded-2xl lg:rounded-[1.25rem] px-5 py-8 sm:py-10 sm:px-8 lg:py-14 lg:px-10 bg-white">
-                  <h1 className="font-normal tracking-tighter text-2xl sm:text-3xl lg:text-[2.5rem] text-left">
+                  <h1 className="text-[var(--mudbrown)] text-xl xl:text-2xl tracking-tighter sm:mb-2">{caseItem.category}</h1>
+                  <h1 className="font-normal tracking-tighter text-3xl lg:text-[2.5rem] text-left">
                     {caseItem.title}
                   </h1>
 

@@ -30,43 +30,7 @@ const Process = () => {
 
     return (
         <div className='relative bg-white'>
-            {/* <Image
-                    src={ProcessBg}
-                    alt="Process Background"
-                    loading="lazy"
-                    className='hidden sm:block absolute bottom-0 inset-x-0 h-fit w-fit'
-                /> */}
-            {/* <div className='absolute top-52 inset-x-0'>
-                <div className="relative w-full h-[240px] overflow-hidden">
-                    <div
-                    className="absolute inset-x-0 top-0 h-[80px]"
-                    style={{
-                        backgroundImage: `url(${LightStar.src})`,
-                        backgroundRepeat: "repeat-x",
-                        backgroundSize: "80px 80px",
-                    }}
-                    />
-
-                    <div
-                    className="absolute inset-x-0 top-[80px] h-[80px]"
-                    style={{
-                        backgroundImage: `url(${MediumStar.src})`,
-                        backgroundRepeat: "repeat-x",
-                        backgroundSize: "80px 80px",
-                        backgroundPosition: "40px 0", 
-                    }}
-                    />
-
-                    <div
-                    className="absolute inset-x-0 top-[160px] h-[80px]"
-                    style={{
-                        backgroundImage: `url(${DarkStar.src})`,
-                        backgroundRepeat: "repeat-x",
-                        backgroundSize: "80px 80px",
-                    }}
-                    />
-                </div>
-            </div> */}
+            
 
             <div className="absolute inset-x-0 bottom-0 w-full flex flex-col items-center -space-y-2 overflow-hidden">
                 
@@ -88,7 +52,7 @@ const Process = () => {
             </div>
 
             {/* content */}
-            <div className="relative z-10 mx-auto container py-12 sm:py-20 lg:py-28 px-5 lg:px-8 2xl:px-0">
+            <div className="relative z-auto mx-auto container py-12 sm:py-20 lg:py-28 px-5 lg:px-8 2xl:px-0">
                 <div>
                     <h1 className="heading-font font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">Our GEO Process</h1>
                     <p className="text-lg lg:text-xl content-font mt-3">How we get your business featured in AI responses</p>
