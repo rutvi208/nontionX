@@ -12,7 +12,7 @@ import Gemini from '@/../public/images/HeroSection/Gemini.png';
 const HeroSection = () => {
     return (
         <div>
-            <div className='relative w-full h-[780px] md:h-[640px] xl:h-[800px] overflow-hidden'>
+            <div className='relative w-full h-[780px] md:h-[640px] xl:h-[700px] overflow-hidden'>
                 <Image
                     src={HeroBg}
                     alt="Hero Background"
@@ -24,7 +24,7 @@ const HeroSection = () => {
                     <Navbar />
 
                     {/* Hero Section */}
-                    <section className="py-10 lg:pt-16 xl:py-20">
+                    <section className="py-10 lg:pt-16 lg:pb-12 xl:py-20">
                         <div className="container mx-auto px-4 sm:px-0 lg:px-6 flex flex-col lg:flex-row items-center gap-4 lg:gap-8 xl:gap-10">
                             {/* Left Text Section */}
                             <div className="flex-1 space-y-7 lg:space-y-7">
