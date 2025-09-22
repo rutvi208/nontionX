@@ -13,26 +13,26 @@ const CaseStudy = () => {
 
                 {/* content */}
                 <div className="mt-10 sm:mt-12 lg:mt-20 border-[0.0625rem] border-[#9B715C] rounded-2xl lg:rounded-[1.25rem] px-5 py-8 sm:py-10 sm:px-8 lg:py-14 lg:px-10">
-                    <h1 className="font-normal tracking-tighter text-2xl sm:text-3xl lg:text-[2.5rem] text-left">Local Dental Practice</h1>
+                    <h1 className="font-normal tracking-tighter text-2xl sm:text-3xl lg:text-[2.5rem] text-left">Extension Architecture</h1>
                     
-                    <div className="mt-6 lg:mt-8 flex flex-col xl:flex-row space-y-10 xl:space-y-0 space-x-0 lg:space-x-10">
+                    <div className="mt-6 lg:mt-8 xl:mt-16 items-center flex flex-col xl:grid xl:grid-cols-2 space-y-10 xl:space-y-0 space-x-0 lg:space-x-6 2xl:space-x-10">
                         {/* left section */}
                         <div className="flex flex-col space-y-6 lg:space-y-10">
-                            <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row space-x-6 sm:space-x-8 xl:space-x-12 mt-6 sm:mt-10 lg:mt-12'>
+                            <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row space-x-6 sm:space-x-8 2xl:space-x-12 2xl:justify-around'>
                                 <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
-                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+340%</p>
+                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+33%</p>
                                     <p className='content-font text-lg lg:text-xl mt-1'>AI Mentions</p>
                                 </div>
                                 <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
-                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+180%</p>
-                                    <p className='content-font text-lg lg:text-xl mt-1'>New Patient Calls</p>
+                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>110</p>
+                                    <p className='content-font text-lg lg:text-xl mt-1'>AI Overview</p>
                                 </div>
                                 <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
-                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+250%</p>
-                                    <p className='content-font text-lg lg:text-xl mt-1'>Local Pack Visibility</p>
+                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+51</p>
+                                    <p className='content-font text-lg lg:text-xl mt-1'>ChatGPT Mentions</p>
                                 </div>
                             </div>
-                            <div className='relative overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-lg lg:rounded-xl p-4 sm:p-5'>
+                            <div className='relative overflow-hidden 2xl:mt-6 border-[0.0625rem] border-[var(--stroke)] rounded-lg lg:rounded-xl p-4 sm:p-5'>
                                 <Image
                                     src={TesstimonialBg}
                                     alt="Tesstimonial Background"
@@ -41,8 +41,9 @@ const CaseStudy = () => {
                                     // z index not added
                                 />
                                 <div className="relative inset-0 z-10 space-y-7">
-                                    <p className="content-font text-xl lg:text-2xl">"We're now the first recommendation when people ask ChatGPT about dentists in Austin. Our phone hasn't stopped ringing."</p>
-                                    <p className="text-[var(--mudbrown)] text-base lg:text-lg content-font">- Dr. Sarah M., Austin Dental Care</p>
+                                    <p className='text-2xl lg:text-3xl xl:text-4xl tracking-tighter'>AI Growth Unlocked in Just 3.5 Months</p>
+                                    <p className="content-font text-xl lg:text-2xl">London-based architectural design firm helping homeowners plan and build extensions, loft conversions, and renovations with expert planning approval support.</p>
+                                    {/* <p className="text-[var(--mudbrown)] text-base lg:text-lg content-font">- Dr. Sarah M., Austin Dental Care</p> */}
                                 </div>
                             </div>
                         </div>
@@ -52,16 +53,16 @@ const CaseStudy = () => {
                             <div>
                                 <p className='text-xl lg:text-2xl font-medium'>The Challenge</p>
                                 <div className='mt-2 lg:mt-3.5 p-4 lg:p-5 bg-[var(--pastelbrown)] lg:rounded-lg border-[0.0625rem] border-[#FAEEE6]'>
-                                    <p className='content-font text-xl'>Austin dental practice struggling to compete with established competitors in local search. Traditional SEO wasn't delivering qualified leads fast enough.</p>
+                                    <p className='content-font text-xl'>Despite a solid SEO foundation and strong brand presence, their content wasn't breaking through into Google AI Overviews and other AI search engines — limiting next-level visibility.</p>
                                 </div>
                             </div>
                             <div>
-                                <div className='flex flex-row justify-between items-center'>
+                                <div>
                                     <p className='text-xl lg:text-2xl font-medium'>The GEO Solution</p>
-                                    <p className='content-font text-sm lg:text-lg'>Results in 6 weeks</p>
+                                    {/* className='flex flex-row justify-between items-center' <p className='content-font text-sm lg:text-lg'>Results in 3.5 months</p> */}
                                 </div>
                                 <div className='mt-2 lg:mt-3.5 p-4 lg:p-5 bg-[var(--pastelbrown)] lg:rounded-lg border-[0.0625rem] border-[#FAEEE6]'>
-                                    <p className='content-font text-xl'>Implemented structured content optimization and local schema markup targeting AI-powered search queries about dental services in Austin.</p>
+                                    <p className='content-font text-xl'>We optimized AI-focused content clusters, enhanced internal linking, and expanded schema markup to boost AI Overview indexing and drive ChatGPT mentions.</p>
                                 </div>
                             </div>
                         </div>

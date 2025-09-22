@@ -23,8 +23,8 @@ const Cta = () => {
                     
                         <div className='mt-8 sm:mt-10 lg:mt-12 items-center space-y-3 sm:space-y-0 flex flex-col sm:flex-row justify-center sm:space-x-7 lg:space-x-9'>
                             <div>
-                                <button className='group py-2.5 px-12 bg-[var(--cta)] cursor-pointer text-white flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
-                                    Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
+                                <button className='group py-2.5 px-10 bg-[var(--cta)] cursor-pointer text-white flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                                    Book a GEO Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                                 </button>
                             </div>
                             <Link  
@@ -32,7 +32,7 @@ const Cta = () => {
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="group text-[var(--cta)] text-lg lg:text-xl font-bold hover:underline flex items-center gap-2">
-                                Claim Your AI Visibility Audit <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
+                                Claim My AI Visibility Audit <span className="transition-transform duration-300 ease-out group-hover:translate-x-1"><HiMiniArrowSmallRight/> </span>
                             </Link>
                             
                         </div>

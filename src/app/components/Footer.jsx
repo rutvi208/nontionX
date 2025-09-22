@@ -19,13 +19,13 @@ const Footer = () => {
                             target="_blank" 
                             rel="noopener noreferrer"
                             className='cursor-pointer group text-white flex items-center text-xl font-semibold hover:text-[var(--cta)] transition duration-300'>
-                            Claim Your AI Visibility Audit <span className='text-white ps-2 text-2xl group-hover:text-[var(--cta)] transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
+                            Claim My AI Visibility Audit <span className='text-white ps-2 text-2xl group-hover:text-[var(--cta)] transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                         </Link>
                     </div>
                     <div className="justify-end-safe">
                         <button
-                            className='group py-2.5 px-12 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] border-[0.0625rem] border-[var(--cta)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
-                            Book Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
+                            className='group py-2.5 px-10 bg-[var(--cta)] cursor-pointer text-[var(--pastelbrown)] border-[0.0625rem] border-[var(--cta)] flex items-center rounded-full text-base lg:text-lg font-bold hover:bg-white hover:text-[var(--cta)] hover:border-[0.0625rem] hover:border-[var(--cta)] transition duration-300'>
+                            Book a GEO Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                         </button>
                     </div>
                     
@@ -43,15 +43,15 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="text-white flex flex-col space-y-4 sm:space-y-0 sm:flex-row mb-6 lg:mb-8 content-font text-sm">
-                            <div className="sm:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
+                            <div className="sm:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4">
                                 <p>© 2025 notionX. All rights reserved. </p>
                             </div>
                             <div className="flex flex-row">
                                 <div className="border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p><Link href="/policy" target="_blank" rel="noopener noreferrer">Privacy Policy</Link></p>
+                                    <p><Link href="https://www.notionmind.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</Link></p>
                                 </div>
                                 <div className="px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p><Link href="/terms" target="_blank" rel="noopener noreferrer">Terms of Services</Link></p>
+                                    <p><Link href="https://www.notionmind.com/terms-of-use" target="_blank" rel="noopener noreferrer">Terms of Services</Link></p>
                                 </div>
                             </div>
                         </div>
