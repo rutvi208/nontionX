@@ -40,16 +40,18 @@ const Plans = () => {
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>professional</h1>
                                 </div>
 
-                                <h1 className='font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$1,997</h1>
+                                <h1 className='font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$1,499</h1>
                                 <p className='text-lg lg:text-xl content-font'>per month</p>
 
                                 <div>
                                     <div className="space-y-3 my-10 lg:my-[3.75rem]">
                                         {[
-                                            "Competitive position defense",
-                                            "Advanced schema development",
-                                            "Weekly AI monitoring",
-                                            "6 AI platforms optimization",
+                                            "Technical SEO Audit",
+                                            "Local GEO Enhancement",
+                                            "Schema development",
+                                            "Executive Monthly Reviews",
+                                            "Monthly Strategy Reports",
+                                            "Monthly 30 Minutes Strategic Call",
                                         ].map((feature, index) => (
                                             <div
                                             key={index}
@@ -72,7 +74,7 @@ const Plans = () => {
                             </div>
 
                             {/* enterprise */}
-                            <div className='bg-[#1F1F1F] sm:w-[21rem] lg:w-[23rem] rounded-xl p-10 flex flex-col'>
+                            <div className='bg-[#1F1F1F] sm:w-[21rem] lg:w-[23.5rem] rounded-xl p-10 flex flex-col'>
 
                                 <div className='flex flex-row space-x-3 items-center text-white'>
                                    <Image 
@@ -83,17 +85,19 @@ const Plans = () => {
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
                                 </div>
 
-                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$3,997</h1>
+                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$2499</h1>
                                 <p className='text-white text-lg lg:text-xl content-font'>per month</p>
 
                                 <div>
                                     <div className="space-y-3 my-10 lg:my-[3.75rem]">
                                         {[
                                             "Everything in Professional",
-                                            "Custom AI training datasets",
-                                            "Daily AI monitoring",
-                                            "All AI platforms optimization",
+                                            "Custom GEO Strategy",
+                                            "Custom Schema Development",
+                                            "Competitor GEO Analysis",
+                                            "Structured Data Testing",
                                             "Dedicated account manager",
+                                            "Monthly 1 Hour Strategic Call"
                                         ].map((feature, index) => (
                                             <div
                                             key={index}
@@ -121,11 +125,11 @@ const Plans = () => {
                         <div className='mt-8 lg:mt-10 flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-4 lg:space-x-0 max-w-3xl justify-center mx-auto'>
                             <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:pe-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
                                 <FiCheckCircle/>
-                                <p className='content-font text-base lg:text-xl'>Results in 6 weeks</p>
+                                <p className='content-font text-base lg:text-xl'>Results in 10-12 weeks</p>
                             </div>
                             <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:px-8 sm:border-e-[0.0625rem] border-[#D4BAAE]'>
                                 <AiOutlineUsergroupAdd/>
-                                <p className='content-font text-base lg:text-xl'>200+ businesses served</p>
+                                <p className='content-font text-base lg:text-xl'>10+ businesses served</p>
                             </div>
                             <div className='text-[#FAEEE6] flex items-center mx-auto justify-center space-x-3 sm:ps-8'>
                                 <FiShield/>

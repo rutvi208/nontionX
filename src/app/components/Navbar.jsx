@@ -35,7 +35,7 @@ const Navbar = () => {
                                 Book a GEO Strategy Call <span className='text-white group-hover:text-[var(--cta)] ps-2 text-2xl transition-transform duration-300 ease-out group-hover:translate-x-1'><HiMiniArrowSmallRight /></span>
                             </button>
                         </nav>
-                        <div onClick={handleNav} className='md:hidden z-20'>
+                        <div onClick={handleNav} className='md:hidden z-50'>
                             
                             {nav ? (
                             <TbX size={24} color="#222222" />  
