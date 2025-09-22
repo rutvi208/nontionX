@@ -1,9 +1,9 @@
 import { BiSearch } from "react-icons/bi";
 import Image from "next/image";
-import BeTheAnswer from '@/assets/WhyUs/BeTheAnswer.svg';
-import FasterResults from '@/assets/WhyUs/FasterResults.svg';
-import FutureProofStrategy from '@/assets/WhyUs/FutureProofStrategy.svg';
-import MeasurableROI from '@/assets/WhyUs/MeasurableROI.svg';
+import BeTheAnswer from '@/../public/images/WhyUs/BeTheAnswer.svg';
+import FasterResults from '@/../public/images/WhyUs/FasterResults.svg';
+import FutureProofStrategy from '@/../public/images/WhyUs/FutureProofStrategy.svg';
+import MeasurableROI from '@/../public/images/WhyUs/MeasurableROI.svg';
 
 const Whyus = () => {
     return (

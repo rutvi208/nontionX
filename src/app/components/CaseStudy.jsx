@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import TesstimonialBg from './../../assets/CaseStudy/Testimonial-Bg.png';
+import TesstimonialBg from '@/../public/images/CaseStudy/Testimonial-Bg.png';
 
 const CaseStudy = () => {
     return (

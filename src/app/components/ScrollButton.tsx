@@ -36,7 +36,7 @@ const ScrollButton = () => {
         {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed cursor-pointer right-3 bottom-6 sm:bottom-5 sm:right-5 bg-[var(--pastelbrown)] text-[var(--foreground)] border border-[var(--stroke)] p-3 rounded-full shadow-lg hover:text-black transition-all"
+          className="fixed cursor-pointer right-4 bottom-4 sm:bottom-5 sm:right-5 bg-[var(--pastelbrown)] text-[var(--foreground)] border border-[var(--stroke)] p-3 rounded-full shadow-lg hover:text-black transition-all"
         >
           <HiOutlineChevronUp size={20} />
         </button>

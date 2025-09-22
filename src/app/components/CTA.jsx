@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import CtaBg from './../../assets/backgrounds/CTAbg.png';
+import CtaBg from '@/../public/images/backgrounds/CTAbg.png';
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import Link from "next/link";
 

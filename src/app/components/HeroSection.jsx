@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import HeroVisual from "./../../assets/HeroSection/Hero-visualBg.png";
-import HeroBg from './../../assets/backgrounds/HeroBg.svg';
+import HeroVisual from "@/../public/images/HeroSection/Hero-visualBg.png";
+import HeroBg from '@/../public/images/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
 import Link from "next/link";
-import ChatGPT from './../../assets/HeroSection/ChatGPT.svg';
-import Perplexity from './../../assets/HeroSection/Perplexity.svg';
-import Gemini from './../../assets/HeroSection/Gemini.png';
+import ChatGPT from '@/../public/images/HeroSection/ChatGPT.svg';
+import Perplexity from '@/../public/images/HeroSection/Perplexity.svg';
+import Gemini from '@/../public/images/HeroSection/Gemini.png';
 
 const HeroSection = () => {
     return (

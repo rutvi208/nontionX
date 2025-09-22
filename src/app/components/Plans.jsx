@@ -1,15 +1,15 @@
 
 import Image from 'next/image';
-import PlansBg from './../../assets/backgrounds/PlansBg.svg';
-import Star from './../../assets/Plans/Star.png';
+import PlansBg from '@/../public/images/backgrounds/PlansBg.svg';
+import Star from '@/../public/images/Plans/Star.png';
 import { FiCheckCircle } from "react-icons/fi";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { FiShield } from "react-icons/fi";
-import Knowtion from './../../assets/Plans/Knowtion.png';
-import Firelands from './../../assets/Plans/Firelands.png';
-import CimconSoftwares from './../../assets/Plans/Cimcon.png';
-import KenGanley from './../../assets/Plans/KenGanley.png';
-import Malish from './../../assets/Plans/Malish.svg';
+import Knowtion from '@/../public/images/Plans/Knowtion.png';
+import Firelands from '@/../public/images/Plans/Firelands.png';
+import CimconSoftwares from '@/../public/images/Plans/Cimcon.png';
+import KenGanley from '@/../public/images/Plans/KenGanley.png';
+import Malish from '@/../public/images/Plans/Malish.svg';
 
 const Plans = () => {
     return (

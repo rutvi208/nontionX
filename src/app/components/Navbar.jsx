@@ -4,7 +4,7 @@ import {useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbMenu, TbX } from "react-icons/tb";
-import Navlogo from '@/assets/logo/navbar-logo.svg';
+import Navlogo from '@/../public/images/logo/navbar-logo.svg';
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 
 const Navbar = () => {

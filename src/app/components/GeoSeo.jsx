@@ -1,13 +1,13 @@
 
 import Image from "next/image";
-import tsv1 from "./../../assets/GEO-SEO/SEO-visual1.webp";
-import tsv2 from "./../../assets/GEO-SEO/SEO-visual2.webp"; 
-import tsv3 from "./../../assets/GEO-SEO/SEO-visual3.webp";
-import tsv4 from "./../../assets/GEO-SEO/SEO-visual4.webp"; 
-import geo1 from "./../../assets/GEO-SEO/GEO-visual1.webp";
-import geo2 from "./../../assets/GEO-SEO/GEO-visual2.webp"; 
-import geo3 from "./../../assets/GEO-SEO/GEO-visual3.webp";
-import geo4 from "./../../assets/GEO-SEO/GEO-visual4.webp";
+import tsv1 from "@/../public/images/GEO-SEO/SEO-visual1.webp";
+import tsv2 from "@/../public/images/GEO-SEO/SEO-visual2.webp"; 
+import tsv3 from "@/../public/images/GEO-SEO/SEO-visual3.webp";
+import tsv4 from "@/../public/images/GEO-SEO/SEO-visual4.webp"; 
+import geo1 from "@/../public/images/GEO-SEO/GEO-visual1.webp";
+import geo2 from "@/../public/images/GEO-SEO/GEO-visual2.webp"; 
+import geo3 from "@/../public/images/GEO-SEO/GEO-visual3.webp";
+import geo4 from "@/../public/images/GEO-SEO/GEO-visual4.webp";
 
 const GeoSeo = () => {
     return (

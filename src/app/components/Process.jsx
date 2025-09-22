@@ -1,14 +1,14 @@
 
 import Image from 'next/image';
-import Arrow from './../../assets/OurProcess/Arrow.svg';
+import Arrow from '@/../public/images/OurProcess/Arrow.svg';
 // import ProcessBg from './../../assets/backgrounds/ProcessBg.svg';
-import LightStar from './../../assets/OurProcess/light-star.svg';
-import MediumStar from './../../assets/OurProcess/medium-star.svg';
-import DarkStar from './../../assets/OurProcess/dark-star.svg'; 
-import ProcessBg1 from './../../assets/OurProcess/Process-bg1.png';
-import ProcessBg2 from './../../assets/OurProcess/Process-bg2.png';
-import ProcessBg3 from './../../assets/OurProcess/Process-bg3.png';
-import ProcessBg4 from './../../assets/OurProcess/Process-bg4.png';
+import LightStar from '@/../public/images/OurProcess/light-star.svg';
+import MediumStar from '@/../public/images/OurProcess/medium-star.svg';
+import DarkStar from '@/../public/images/OurProcess/dark-star.svg'; 
+import ProcessBg1 from '@/../public/images/OurProcess/Process-bg1.png';
+import ProcessBg2 from '@/../public/images/OurProcess/Process-bg2.png';
+import ProcessBg3 from '@/../public/images/OurProcess/Process-bg3.png';
+import ProcessBg4 from '@/../public/images/OurProcess/Process-bg4.png';
 
 const Process = () => {
 

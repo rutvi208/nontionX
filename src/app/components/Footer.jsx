@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import logo from './../../assets/logo/footer-logo.svg';
+import logo from '@/../public/images/logo/footer-logo.svg';
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import Link from "next/link";
 
@@ -42,11 +42,11 @@ const Footer = () => {
                         /></Link>
                     </div>
                     <div>
-                        <div className="text-white flex flex-col space-y-4 sm:space-y-0 sm:flex-row mb-6 lg:mb-8 content-font text-sm">
-                            <div className="sm:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4">
-                                <p>© 2025 notionX. All rights reserved. </p>
+                        <div className="text-white flex flex-col space-y-4 lg:space-y-2 2xl:space-y-0 2xl:flex-row mb-6 lg:mb-8 content-font text-sm">
+                            <div className="2xl:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4">
+                                <p className="sm:text-right">© 2025 Notionmind®, Kinsh Technologies, Knowtion, Inc. All rights reserved. </p>
                             </div>
-                            <div className="flex flex-row">
+                            <div className="flex flex-row md:justify-end">
                                 <div className="border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
                                     <p><Link href="https://www.notionmind.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</Link></p>
                                 </div>
