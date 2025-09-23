@@ -58,7 +58,7 @@ const Navbar = () => {
                                     <li className='text-2xl py-4 flex items-start'><Link href='#pricing'>Pricing</Link></li>
                                     <li>
                                         <Link  
-                                            href="https://ai-seo-geo-auditor.netlify.app/" 
+                                            href="https://geo.notionx.ai/" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             className="group text-2xl py-4 flex items-center gap-2">

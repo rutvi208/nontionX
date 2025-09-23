@@ -29,7 +29,7 @@ const Cta = () => {
                                 </button>
                             </div>
                             <Link  
-                                href="https://ai-seo-geo-auditor.netlify.app/" 
+                                href="https://geo.notionx.ai/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="group text-[var(--cta)] text-lg lg:text-xl font-bold hover:underline flex items-center gap-2">

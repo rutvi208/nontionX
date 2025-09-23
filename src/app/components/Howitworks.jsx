@@ -70,7 +70,7 @@ const Howitworks = () => {
                 
                 <div className="mt-5 lg:mt-10 text-center mx-auto">
                     <Link 
-                        href="https://ai-seo-geo-auditor.netlify.app/" 
+                        href="https://geo.notionx.ai/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="group text-[var(--cta)] text-lg lg:text-xl font-bold hover:underline flex justify-center-safe items-center text-center mx-auto gap-2">

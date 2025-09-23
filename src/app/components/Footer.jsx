@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <div className="bg-gradient-to-r from-[#340404] to-[#161300]">
-            <div className='flex flex-col space-y-4 sm:space-y-10 xl:space-y-16 px-3 lg:px-6 container mx-auto'>
+            <div className='flex flex-col space-y-4 sm:space-y-10 xl:space-y-12 px-3 lg:px-6 container mx-auto'>
                 
                 {/* left */}
                 <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between mt-8">
@@ -16,7 +16,7 @@ const Footer = () => {
                         <a href="#howitworks" className="text-xl hover:text-[var(--cta)]">How it works</a>
                         <a href="#pricing" className="text-xl hover:text-[var(--cta)]">Pricing</a>
                         <Link 
-                            href="https://ai-seo-geo-auditor.netlify.app/" 
+                            href="https://geo.notionx.ai/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className='cursor-pointer group text-white flex items-center text-xl font-semibold hover:text-[var(--cta)] transition duration-300'>
@@ -33,7 +33,23 @@ const Footer = () => {
                 </div>
 
                 {/* right */}
-                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 mt-8 sm:justify-between sm:items-end">
+                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 mt-8 mb-2 sm:mb-4 lg:mb-5 sm:justify-between sm:items-center">
+                    
+                    <div>
+                        <div className="text-white flex flex-col space-y-4 lg:space-y-0 content-font text-sm">
+                            <div className="pe-2 2xl:pe-4">
+                                <p className="2xl:text-base">© 2025 Notionmind®, Kinsh Technologies, Knowtion, Inc. All rights reserved. </p>
+                            </div>
+                            <div className="flex flex-row md:justify-start">
+                                <div className="border-r-[0.0625rem] border-r-white/40 pe-2 sm:pe-2 2xl:pe-4 cursor-pointer hover:text-[var(--cta)]">
+                                    <p><Link href="/privacypolicy.html" rel="noopener noreferrer">Privacy Policy</Link></p>
+                                </div>
+                                <div className="pe-2 sm:px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
+                                    <p><Link href="/termsofuse.html" rel="noopener noreferrer">Terms of Services</Link></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div>
                         <Link href={"/"}><Image
                             src={logo}
@@ -41,21 +57,6 @@ const Footer = () => {
                             loading="lazy"
                             className='w-52 h-auto'
                         /></Link>
-                    </div>
-                    <div>
-                        <div className="text-white flex flex-col space-y-4 lg:space-y-0 lg:flex-row mb-2 content-font text-sm lg:items-center">
-                            <div className="lg:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4">
-                                <p className="sm:text-right 2xl:text-base">© 2025 Notionmind®, Kinsh Technologies, Knowtion, Inc. All rights reserved. </p>
-                            </div>
-                            <div className="flex flex-row md:justify-end">
-                                <div className="border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p><Link href="/privacypolicy.html" rel="noopener noreferrer">Privacy Policy</Link></p>
-                                </div>
-                                <div className="px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p><Link href="/termsofuse.html" rel="noopener noreferrer">Terms of Services</Link></p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
