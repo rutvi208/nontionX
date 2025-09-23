@@ -49,7 +49,7 @@ const Navbar = () => {
                                     <TbMenu size={24} color={onTap ? "#4D4D4D" : "#222222"} /> 
                                 )}
                         </div>
-                            <div
+                            <div onClick={handleNav}
                                 className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-40 transform transition-transform duration-300 ease-in-out lg:hidden ${
                                     nav ? "translate-x-0" : "-translate-x-full"}`}                            >
 

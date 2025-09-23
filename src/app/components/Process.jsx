@@ -55,7 +55,7 @@ const Process = () => {
             <div className="relative z-auto mx-auto container py-12 sm:py-20 lg:py-28 px-5 lg:px-8 2xl:px-0">
                 <div>
                     <h1 className="heading-font font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-[-0.06rem]">Our GEO Process</h1>
-                    <p className="text-lg lg:text-xl content-font mt-3">How we get your business featured in AI responses</p>
+                    <p className="text-lg lg:text-xl content-font mt-3">How we get your business featured in AI responses.</p>
                 </div>
 
                 <div className="mt-12 lg:mt-20">
