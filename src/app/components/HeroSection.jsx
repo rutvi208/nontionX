@@ -80,7 +80,7 @@ const HeroSection = () => {
                                         fill
                                         className="object-contain"
                                     />
-                                    <div className="absolute inset-0 z-20 px-10 lg:px-12 xl:px-9 py-16 xl:py-5 place-content-center">
+                                    <div className="absolute inset-0 z-auto px-10 lg:px-12 xl:px-9 py-16 xl:py-5 place-content-center">
                                         <div className="flex flex-col space-y-1 lg:space-y-2 xl:px-12">
                                             <div className="bg-white rounded-t-2xl rounded-b-md p-4 lg:p-5 container mx-auto justify-center place-items-center text-center">
                                                 <h1 className="content-font lg:text-lg xl:text-xl text-center font-semibold text-[#5D3E35]">Powered by GEO</h1>

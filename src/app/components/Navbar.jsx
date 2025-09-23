@@ -1,6 +1,6 @@
 "use client";
 
-import {useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbMenu, TbX } from "react-icons/tb";
@@ -16,7 +16,13 @@ const Navbar = () => {
           setOnTap((prev) => !prev); // Toggle color
         // Your existing logic for handling navigation
         }
-    
+    useEffect(() => {
+        if (nav) {
+            document.body.style.overflow = "hidden";  // lock background
+        } else {
+            document.body.style.overflow = "auto";    // restore scrolling
+        }
+    }, [nav]);
 
     return (
         <div>
@@ -38,22 +44,21 @@ const Navbar = () => {
                         <div onClick={handleNav} className='md:hidden z-50'>
                             
                             {nav ? (
-                            <TbX size={24} color="#222222" />  
+                            <TbX size={24} color="#222222" onClick={handleNav} />  
                                 ) : (
                                     <TbMenu size={24} color={onTap ? "#4D4D4D" : "#222222"} /> 
                                 )}
                         </div>
                             <div
-                                onClick={handleNav}
-                                className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
-                                    nav ? "translate-x-0" : "-translate-x-full"} overflow-hidden`}                            >
+                                className={`fixed top-0 left-0 h-screen w-full bg-[#F7F7F7] px-4 py-8 flex flex-col text-[var(--foreground)] z-40 transform transition-transform duration-300 ease-in-out lg:hidden ${
+                                    nav ? "translate-x-0" : "-translate-x-full"}`}                            >
 
-                                <div className='justify-center flex'>
+                                <div className='justify-center flex items-center'>
                                     <Link href={"/"}><Image fetchPriority='high' src={Navlogo} alt="ResoNex logo" width={160} height={40}
                                     loading="lazy" /></Link>
                                 </div>
 
-                                <ul className='h-max w-full pt-12'>
+                                <ul className='w-full pt-12'>
                                     <li className='text-2xl py-4 flex items-start'><Link href="#howitworks">How it works</Link></li>
                                     <li className='text-2xl py-4 flex items-start'><Link href='#pricing'>Pricing</Link></li>
                                     <li>

@@ -44,7 +44,7 @@ const Footer = () => {
                                 <div className="border-r-[0.0625rem] border-r-white/40 pe-2 sm:pe-2 2xl:pe-4 cursor-pointer hover:text-[var(--cta)]">
                                     <p><Link href="/privacypolicy.html" rel="noopener noreferrer">Privacy Policy</Link></p>
                                 </div>
-                                <div className="pe-2 sm:px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
+                                <div className="px-2 sm:px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
                                     <p><Link href="/termsofuse.html" rel="noopener noreferrer">Terms of Services</Link></p>
                                 </div>
                             </div>
