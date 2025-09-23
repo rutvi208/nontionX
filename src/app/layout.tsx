@@ -3,9 +3,8 @@ import "./globals.css";
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: "notionX | GEO",
-  description: "Dominate AI Search Results Before Your Competitors Do.",
-  keywords: "seo, optimization, ai, marketing, digital marketing",
+  title: "AI SEO & Generative Engine Optimization for Brands - NotionX",
+  description: "NotionX helps brands get discovered in AI search results. We specialize in AI SEO, GEO and improving visibility across AI-powered platforms.",
   icons: {
     icon: "/images/favicon.ico",
   },
