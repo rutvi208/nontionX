@@ -85,7 +85,7 @@ const Plans = () => {
                                    <h1 className='text-xl lg:text-2xl font-semibold uppercase tracking-[-0.045rem]'>enterprise</h1>
                                 </div>
 
-                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$2499</h1>
+                                <h1 className='text-white font-medium text-4xl lg:text-[4rem] mt-6 lg:mt-10'>$2,499</h1>
                                 <p className='text-white text-lg lg:text-xl content-font'>per month</p>
 
                                 <div>

@@ -39,20 +39,20 @@ const Footer = () => {
                             src={logo}
                             alt="notionx Logo"
                             loading="lazy"
-                            className='w-fit h-fit'
+                            className='w-52 h-auto'
                         /></Link>
                     </div>
                     <div>
-                        <div className="text-white flex flex-col space-y-4 lg:space-y-2 2xl:space-y-0 2xl:flex-row mb-6 lg:mb-8 content-font text-sm">
-                            <div className="2xl:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4">
-                                <p className="sm:text-right">© 2025 Notionmind®, Kinsh Technologies, Knowtion, Inc. All rights reserved. </p>
+                        <div className="text-white flex flex-col space-y-4 lg:space-y-0 lg:flex-row mb-2 content-font text-sm lg:items-center">
+                            <div className="lg:border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4">
+                                <p className="sm:text-right 2xl:text-base">© 2025 Notionmind®, Kinsh Technologies, Knowtion, Inc. All rights reserved. </p>
                             </div>
                             <div className="flex flex-row md:justify-end">
                                 <div className="border-r-[0.0625rem] border-r-white/40 px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p><Link href="https://www.notionmind.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</Link></p>
+                                    <p><Link href="/privacypolicy.html" rel="noopener noreferrer">Privacy Policy</Link></p>
                                 </div>
                                 <div className="px-2 2xl:px-4 cursor-pointer hover:text-[var(--cta)]">
-                                    <p><Link href="https://www.notionmind.com/terms-of-use" target="_blank" rel="noopener noreferrer">Terms of Services</Link></p>
+                                    <p><Link href="/termsofuse.html" rel="noopener noreferrer">Terms of Services</Link></p>
                                 </div>
                             </div>
                         </div>
