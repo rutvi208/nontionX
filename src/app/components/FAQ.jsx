@@ -88,7 +88,7 @@ const Faq = () => {
                             {/* Answer */}
                             <div
                             className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                                openIndex === index ? "max-h-40" : "max-h-0"
+                                openIndex === index ? "max-h-max" : "max-h-0"
                             }`}
                             >
                             <div className="pb-4">
