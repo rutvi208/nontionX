@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import TesstimonialBg from "@/../public/images/CaseStudy/Testimonial-Bg.png";
+import { useSwipeable } from 'react-swipeable';
 
 const caseStudies = [
   {
@@ -85,16 +86,43 @@ const caseStudies = [
 
 const CaseStudy = () => {
   const [current, setCurrent] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const slides = [
+  caseStudies[caseStudies.length - 1], // clone last
+  ...caseStudies,
+  caseStudies[0], // clone first
+];
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % caseStudies.length);
-  };
+const nextSlide = () => {
+  setCurrent((prev) => prev + 1);
+  setIsTransitioning(true);
+};
 
-  const prevSlide = () => {
-    setCurrent((prev) =>
-      prev === 0 ? caseStudies.length - 1 : prev - 1
-    );
-  };
+const prevSlide = () => {
+  setCurrent((prev) => prev - 1);
+  setIsTransitioning(true);
+};
+
+const handleTransitionEnd = () => {
+  // If we moved past the last "real" slide → jump back to real first
+  if (current === slides.length - 1) {
+    setIsTransitioning(false);
+    setCurrent(1);
+  }
+  // If we moved before the first "real" slide → jump to real last
+  if (current === 0) {
+    setIsTransitioning(false);
+    setCurrent(slides.length - 2);
+  }
+};
+  
+  // Swipe Handlers
+      const swipeHandlers = useSwipeable({
+        onSwipedLeft: nextSlide,
+        onSwipedRight: prevSlide,
+        preventScrollOnSwipe: true,
+        trackMouse: true, // For testing swipes on desktop
+      });
 
   return (
     <div className="relative overflow-hidden">
@@ -111,86 +139,78 @@ const CaseStudy = () => {
       </div>
 
       {/* Slider Wrapper */}
-      <div className="relative container mx-auto mt-10 sm:mt-12 lg:mt-20">
+      <div className="relative container mx-auto">
         <div className="overflow-hidden">
           <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {caseStudies.map((caseItem, idx) => (
+            className="flex mt-10 xl:mt-12"
+            style={{ transform: `translateX(-${current * 100}%)`,
+                    transition: isTransitioning ? "transform 0.7s ease-in-out" : "none",
+             }}
+             onTransitionEnd={handleTransitionEnd}
+          {...swipeHandlers}>
+            {slides.map((caseItem, idx) => (
               <div
                 key={idx}
-                className="w-full flex-shrink-0 px-5 lg:px-8 2xl:px-0"
+                className="w-full flex-shrink-0 px-5 lg:px-8 2xl:px-2"
+                aria-live={idx === current ? "polite" : "off"}
+                role="region"
+                aria-label={`Slide ${idx + 1}`}
               >
-                <div className="border-[0.0625rem] border-[#9B715C] rounded-2xl lg:rounded-[1.25rem] px-5 py-8 sm:py-10 sm:px-8 lg:py-14 lg:px-10 bg-white">
-                  <h1 className="text-[var(--mudbrown)] text-xl xl:text-2xl tracking-tighter sm:mb-2">{caseItem.category}</h1>
-                  <h1 className="font-normal tracking-tighter text-3xl lg:text-[2.5rem] text-left">
-                    {caseItem.title}
-                  </h1>
-
-                  <div className="mt-6 lg:mt-8 xl:mt-16 flex flex-col xl:grid xl:grid-cols-2 gap-10">
-                    {/* Left */}
-                    <div className="flex flex-col space-y-6 lg:space-y-10">
-                      {/* Stats */}
-                      <div className="flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-8 2xl:space-x-12 2xl:justify-around">
-                        {caseItem.stats.map((s, i) => (
-                          <div
-                            key={i}
-                            className="border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-col"
-                          >
-                            <p className="font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]">
-                              {s.value}
-                            </p>
-                            <p className="content-font text-lg lg:text-xl mt-1">
-                              {s.label}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Image & Description */}
-                      <div className="relative 2xl:mt-12 overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-lg lg:rounded-xl p-4 sm:p-5">
-                        <Image
-                          src={TesstimonialBg}
-                          alt="Testimonial Background"
-                          loading="lazy"
-                          className="absolute inset-0 object-cover h-full w-full"
-                        />
-                        <div className="relative z-10 space-y-7">
-                          <p className="text-2xl lg:text-3xl xl:text-4xl tracking-tighter">
-                            {caseItem.heading}
-                          </p>
-                          <p className="content-font text-xl lg:text-2xl">
-                            {caseItem.desc}
-                          </p>
+                <div className="mt-8 2xl:mt-20 border-[0.0625rem] border-[#9B715C] rounded-2xl lg:rounded-[1.25rem] px-5 py-8 sm:py-10 sm:px-8 xl:mt-12 2xl:py-14 lg:px-10">
+                    <h1 className="text-[var(--mudbrown)] text-lg xl:text-xl tracking-tighter sm:mb-2">{caseItem.category}</h1>
+                
+                    <h1 className="font-normal tracking-tighter text-2xl sm:text-3xl lg:text-[2.5rem] text-left">{caseItem.title}</h1>
+                    
+                    <div className="mt-6 lg:mt-4 xl:mt-8 2xl:mt-12 items-center flex flex-col xl:grid xl:grid-cols-2 space-y-10 xl:space-y-0 space-x-0 lg:space-x-6 2xl:space-x-10">
+                       
+                        <div className="flex flex-col justify-between h-full space-y-6 sm:space-y-4 xl:space-y-0">
+                            <div className="flex flex-col space-y-6 xl:space-y-0 sm:flex-row space-x-6 sm:space-x-8 2xl:space-x-12 sm:items-center 2xl:justify-around lg:mt-10 xl:mt-12">
+                              {caseItem.stats.map((s, i) => (
+                                <div
+                                  key={i}
+                                  className="border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0"
+                                >
+                                  <p className="font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]">
+                                    {s.value}
+                                  </p>
+                                  <p className="content-font text-lg lg:text-xl mt-1">
+                                    {s.label}
+                                  </p>
+                                </div>
+                              ))}
+                            </div>
+                            <div className='relative overflow-hidden border-[0.0625rem] border-[var(--stroke)] rounded-lg lg:rounded-xl p-4 sm:p-5'>
+                                <Image
+                                    src={TesstimonialBg}
+                                    alt="Tesstimonial Background"
+                                    loading="lazy"
+                                    className='absolute inset-0 object-cover h-full w-full' 
+                                   
+                                />
+                                <div className="relative inset-0 z-auto space-y-3.5">
+                                    <p className='text-xl lg:text-2xl font-medium'>{caseItem.heading}</p>
+                                    <p className="content-font text-lg xl:text-xl">{caseItem.desc}</p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+
+                        <div className='flex flex-col space-y-6 sm:space-y-8'>
+                            <div>
+                                <p className='text-xl lg:text-2xl font-medium'>The Challenge</p>
+                                <div className='mt-2 lg:mt-3.5 p-4 lg:p-5 bg-[var(--pastelbrown)] lg:rounded-lg border-[0.0625rem] border-[#FAEEE6]'>
+                                    <p className='content-font text-lg xl:text-xl'>{caseItem.challenge}</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p className='text-xl lg:text-2xl font-medium'>The GEO Solution</p>
+                                </div>
+                                <div className='mt-2 lg:mt-3.5 p-4 lg:p-5 bg-[var(--pastelbrown)] lg:rounded-lg border-[0.0625rem] border-[#FAEEE6]'>
+                                    <p className='content-font text-lg xl:text-xl'>{caseItem.solution}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    {/* Right */}
-                    <div className="flex flex-col space-y-6 sm:space-y-8 lg:space-y-10">
-                      <div>
-                        <p className="text-xl lg:text-2xl font-medium">
-                          The Challenge
-                        </p>
-                        <div className="mt-2 lg:mt-3.5 p-4 lg:p-5 bg-[var(--pastelbrown)] lg:rounded-lg border-[0.0625rem] border-[#FAEEE6]">
-                          <p className="content-font text-xl">
-                            {caseItem.challenge}
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <p className="text-xl lg:text-2xl font-medium">
-                          The GEO Solution
-                        </p>
-                        <div className="mt-2 lg:mt-3.5 p-4 lg:p-5 bg-[var(--pastelbrown)] lg:rounded-lg border-[0.0625rem] border-[#FAEEE6]">
-                          <p className="content-font text-xl">
-                            {caseItem.solution}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}
@@ -198,7 +218,7 @@ const CaseStudy = () => {
         </div>
 
         {/* Chevron Buttons Below */}
-        <div className="flex justify-center space-x-6 mt-3 sm:mt-8">
+        <div className="flex justify-center space-x-6 mt-2 2xl:mt-8">
           <button
             onClick={prevSlide}
             className="bg-white/80 hover:bg-white rounded-full p-2 shadow-md mb-2"
