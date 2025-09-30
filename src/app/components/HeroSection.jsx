@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import HeroVisual from "@/../public/images/HeroSection/Hero-visualBg.png";
+// import HeroVisual from "@/../public/images/HeroSection/Hero-visualBg.png";
+import HeroVisual from "@/../public/images/HeroSection/Hero-visualBg.02ec445e.webp";
 import HeroBg from '@/../public/images/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
 import Link from "next/link";
