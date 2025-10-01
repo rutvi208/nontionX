@@ -26,7 +26,7 @@ const CaseStudy = () => {
                                     <p className='content-font text-lg lg:text-xl mt-1'>AI Mentions</p>
                                 </div>
                                 <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>
-                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>110</p>
+                                    <p className='font-semibold text-4xl lg:text-[2.5rem] text-[var(--mudbrown)]'>+110</p>
                                     <p className='content-font text-lg lg:text-xl mt-1'>AI Overview</p>
                                 </div>
                                 <div className='border-l-2 border-[#D4BAAE] px-3 lg:px-5 md:-mt-5 xl:mt-0 flex flex-row items-baseline space-x-3 sm:flex-col sm:space-x-0'>

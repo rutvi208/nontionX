@@ -54,18 +54,3 @@ summary {
   position: relative;
   padding-left: 1.5rem;
 }
-
-{/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KK4TC3HGNP" 
-          strategy="afterInteractive"
-          ></Script>
-        
-        <Script id="google-analytics" strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-KK4TC3HGNP');
-            `,
-          }}
-        /> */}
