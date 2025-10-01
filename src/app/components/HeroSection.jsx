@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import HeroImage from "@/../public/images/HeroSection/Hero-visual.avif"
+import HeroMobile from "@/../public/images/HeroSection/Hero-visualBg.png"
 import HeroVisual from "@/../public/images/HeroSection/Hero-Visual-Bg.svg";
 import HeroBg from '@/../public/images/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
@@ -13,7 +13,7 @@ import Gemini from '@/../public/images/HeroSection/Gemini.png';
 const HeroSection = () => {
     return (
         <div>
-            <div className='relative w-full h-[680px] md:h-[640px] xl:h-[700px] overflow-hidden'>
+            <div className='relative w-full h-[740px] md:h-[640px] xl:h-[700px] overflow-hidden'>
                 <Image
                     src={HeroBg}
                     alt="Hero Background"
@@ -63,16 +63,25 @@ const HeroSection = () => {
 
                             {/* Right Image Section */}
                             <div>
-                                <div className="sm:hidden">
+                                {/* <div className="sm:hidden">
                                     <Image
                                          src={HeroImage}
                                         alt="Hero Image"
                                         priority
                                         fetchPriority="high"
-                                        className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
+                                        className="w-[380px] h-auto"
                                     />
-                                </div>
-                                <div className="relative hidden sm:block w-[380px] h-[320px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
+                                </div> */}
+                                <div className="relative w-[380px] h-[320px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
+                                    <Image
+                                         src={HeroMobile}
+                                        alt="Hero Image"
+                                        priority
+                                        fetchPriority="high"
+                                        loading="eager"
+                                        fill
+                                        className="object-contain sm:hidden"
+                                    />
                                     <Image
                                          src={HeroVisual}
                                         alt="Hero Image"
@@ -80,7 +89,7 @@ const HeroSection = () => {
                                         fetchPriority="high"
                                         loading="eager"
                                         fill
-                                        className="object-contain"
+                                        className="object-contain hidden sm:block"
                                     />
                                     <div className="absolute inset-0 z-auto px-10 lg:px-12 xl:px-9 py-16 xl:py-5 place-content-center">
                                         <div className="flex flex-col space-y-1 lg:space-y-2 xl:px-12">
