@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import HeroImage from "@/../public/images/HeroSection/Hero-visual.png"
+import HeroImage from "@/../public/images/HeroSection/Hero-visual.avif"
 import HeroVisual from "@/../public/images/HeroSection/Hero-Visual-Bg.svg";
 import HeroBg from '@/../public/images/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
@@ -13,7 +13,7 @@ import Gemini from '@/../public/images/HeroSection/Gemini.png';
 const HeroSection = () => {
     return (
         <div>
-            <div className='relative w-full h-[780px] md:h-[640px] xl:h-[700px] overflow-hidden'>
+            <div className='relative w-full h-[680px] md:h-[640px] xl:h-[700px] overflow-hidden'>
                 <Image
                     src={HeroBg}
                     alt="Hero Background"
@@ -68,6 +68,7 @@ const HeroSection = () => {
                                          src={HeroImage}
                                         alt="Hero Image"
                                         priority
+                                        fetchPriority="high"
                                         className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
                                     />
                                 </div>
