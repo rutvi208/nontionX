@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
+import HeroImage from "@/../public/images/HeroSection/Hero-visual.png"
 import HeroVisual from "@/../public/images/HeroSection/Hero-Visual-Bg.svg";
 import HeroBg from '@/../public/images/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
@@ -62,15 +63,15 @@ const HeroSection = () => {
 
                             {/* Right Image Section */}
                             <div>
-                                {/* <div>
+                                <div className="sm:hidden">
                                     <Image
-                                         src={Hero}
+                                         src={HeroImage}
                                         alt="Hero Image"
                                         priority
                                         className="object-cover w-full h-full sm:w-fit sm:h-[14rem] xl:w-fit xl:h-fit"
                                     />
-                                </div> */}
-                                <div className="relative w-[380px] h-[320px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
+                                </div>
+                                <div className="relative hidden sm:block w-[380px] h-[320px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
                                     <Image
                                          src={HeroVisual}
                                         alt="Hero Image"
