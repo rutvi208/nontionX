@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { LuRocket } from "react-icons/lu";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import HeroMobile from "@/../public/images/HeroSection/Hero-visualBg.png"
+import HeroMobile from "@/../public/images/HeroSection/Hero-4x.webp"
 import HeroVisual from "@/../public/images/HeroSection/Hero-Visual-Bg.svg";
 import HeroBg from '@/../public/images/backgrounds/HeroBg.svg';
 import Navbar from '@/app/components/Navbar';
@@ -72,7 +72,7 @@ const HeroSection = () => {
                                         className="w-[380px] h-auto"
                                     />
                                 </div> */}
-                                <div className="relative w-[380px] h-[320px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
+                                <div className="relative w-[380px] h-[340px] sm:h-[300px] lg:w-[500px] xl:w-[600px] lg:h-[360px]">
                                     <Image
                                          src={HeroMobile}
                                         alt="Hero Image"
