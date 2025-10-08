@@ -139,8 +139,8 @@ const Plans = () => {
 
                         {/* Testimonial section */}
                         <div className='bg-[#191919] rounded-xl mt-16 lg:mt-28 p-6 sm:p-8 lg:p-10 xl:px-16 max-w-5xl mx-auto'>
-                            <div className='mb-12 sm:mb-16 container mx-auto grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12 justify-center items-center'>
-                                
+                            <div className='container mx-auto grid grid-cols-2 space-x-4 space-y-8 sm:space-y-0 sm:flex sm:flex-row sm:space-x-8 xl:space-x-12 justify-center items-center'>
+                                {/* mb-12 sm:mb-16  */}
                                 <div className='justify-center flex'>
                                     <Image
                                         src={Firelands}
@@ -180,10 +180,10 @@ const Plans = () => {
                                     />
                                 </div>
                             </div>
-                            <div className='text-center container mx-auto place-content-center flex flex-col justify-center'>
+                            {/* <div className='text-center container mx-auto place-content-center flex flex-col justify-center'>
                                 <p className='text-white font-light content-font text-xl sm:text-2xl lg:text-3xl sm:w-10/12 lg:w-9/12 mx-auto'>"SmartAI SEO transformed our visibility. We're now the top recommendationm for HVAC services in our region across all major AI platforms."</p>
                                 <p className='text-white content-font text-sm lg:text-base mt-4 lg:mt-6'>Mike R., Regional HVAC Company</p>
-                            </div>
+                            </div> */}
 
                         </div>
 

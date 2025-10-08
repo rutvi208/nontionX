@@ -36,9 +36,9 @@ const Footer = () => {
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 mt-8 mb-2 sm:mb-4 lg:mb-5 sm:justify-between sm:items-center">
                     
                     <div>
-                        <div className="text-white flex flex-col space-y-4 lg:space-y-0 content-font text-sm">
+                        <div className="text-white flex flex-col sm:flex-row space-y-4 sm:space-y-0 content-font sm:items-center text-sm">
                             <div className="pe-2 2xl:pe-4">
-                                <p className="2xl:text-base">© 2025 Notionmind®, Kinsh Technologies, Knowtion, Inc. All rights reserved. </p>
+                                <p className="2xl:text-base">© 2025 Knowtion, Inc. All rights reserved.</p>
                             </div>
                             <div className="flex flex-row md:justify-start">
                                 <div className="border-r-[0.0625rem] border-r-white/40 pe-2 sm:pe-2 2xl:pe-4 cursor-pointer hover:text-[var(--cta)]">
