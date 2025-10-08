@@ -8,10 +8,10 @@ const PrivacyPolicy = () => {
         <div>
             <Navbar/>
         </div>
-    
+
         <div className='mx-3 lg:mx-4 xl:mx-0 my-8 lg:mt-16 contrnt-font'>
             <div className='lg:max-w-[1200px] 2xl:max-w-[1380px] m-auto bg-white text-base'>
-                
+
 
                 <div className='mx-8 sm:mx-12'>
                     <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-tight text-[var(--foreground)] heading-font">
@@ -136,8 +136,8 @@ const PrivacyPolicy = () => {
                     <section className="contact-info">
                         <h2 className='font-bold my-2'>8. Contact Us</h2>
                         <p>For privacy-related inquiries:</p>
-                        {/* <p>Email: info@notionmind.com</p> */}
-                        <p>Email: <a href="mailto:info@notionmind.com" className='hover:underline hover:text-blue-600'>info@notionmind.com</a></p>
+                        {/* <p>Email: hello@knowtion-inc.com</p> */}
+                        <p>Email: <a href="mailto:hello@knowtion-inc.com" className='hover:underline hover:text-blue-600'>hello@knowtion-inc.com</a></p>
                     </section>
                 </div>
 

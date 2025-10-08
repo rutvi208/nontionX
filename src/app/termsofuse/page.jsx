@@ -8,7 +8,7 @@ const TermsOfUse = () => {
         <div>
             <Navbar/>
         </div>
-        
+
         <div className='mx-3 lg:mx-4 xl:mx-0 my-8 content-font'>
             <div className='lg:max-w-[1200px] 2xl:max-w-[1380px] m-auto bg-white'>
 
@@ -115,7 +115,7 @@ const TermsOfUse = () => {
                     <section className="contact-info">
                         <h2 className='font-bold my-2'>9. Contact Information</h2>
                         <p>For terms-related inquiries:</p>
-                        <p>Email: <a href="mailto:info@notionmind.com" className='hover:underline hover:text-blue-600'>info@notionmind.com</a></p>
+                        <p>Email: <a href="mailto:hello@knowtion-inc.com" className='hover:underline hover:text-blue-600'>hello@knowtion-inc.com</a></p>
                         {/* <p>Phone: +91 98985 58679 (India) +1 844.360.7360 (USA)</p> */}
                     </section>
 
