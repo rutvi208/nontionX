@@ -136,9 +136,8 @@ const PrivacyPolicy = () => {
                     <section className="contact-info">
                         <h2 className='font-bold my-2'>8. Contact Us</h2>
                         <p>For privacy-related inquiries:</p>
-                        <p>Email: info@notionmind.com</p>
-                        <p>Phone: +91 98985 58679 (India) <br/>
-                        +1 844.360.7360 (USA)</p>
+                        {/* <p>Email: info@notionmind.com</p> */}
+                        <p>Email: <a href="mailto:info@notionmind.com" className='hover:underline hover:text-blue-600'>info@notionmind.com</a></p>
                     </section>
                 </div>
 
