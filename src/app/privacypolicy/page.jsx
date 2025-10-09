@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
             <Navbar/>
         </div>
 
-        <div className='mx-3 lg:mx-4 xl:mx-0 my-8 lg:mt-16 contrnt-font'>
+        <div className='mx-3 lg:mx-4 xl:mx-0 my-8 lg:mt-16 content-font'>
             <div className='lg:max-w-[1200px] 2xl:max-w-[1380px] m-auto bg-white text-base'>
 
 
